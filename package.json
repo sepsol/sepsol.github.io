@@ -16,7 +16,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "yarn run build",
+    "ff": "cross-env BROWSER=firefox react-scripts start",
+    "predeploy": "react-scripts build",
     "deploy": "gh-pages -b master -d build"
   },
   "eslintConfig": {
@@ -35,6 +36,7 @@
     ]
   },
   "devDependencies": {
+    "cross-env": "^7.0.2",
     "gh-pages": "^3.1.0"
   }
 }
