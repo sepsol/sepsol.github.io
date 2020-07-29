@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "76160110cbb0b3fca6612d1a8df4eaa9",
+    "revision": "c120cf99472070a8df6d2466b7cef2c1",
     "url": "/index.html"
   },
   {
-    "revision": "ffc8bbb28b93cb46f6d7",
-    "url": "/static/css/main.7f5baafd.chunk.css"
+    "revision": "3d65adaaa7e2db5146a1",
+    "url": "/static/css/main.d10cb2c8.chunk.css"
   },
   {
     "revision": "1ccea57afe18418fd21a",
@@ -16,12 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.19bc25ce.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ffc8bbb28b93cb46f6d7",
-    "url": "/static/js/main.28f6c713.chunk.js"
+    "revision": "3d65adaaa7e2db5146a1",
+    "url": "/static/js/main.8982bd1b.chunk.js"
   },
   {
     "revision": "701891ecf73aefb6853c",
     "url": "/static/js/runtime-main.9c75deed.js"
+  },
+  {
+    "revision": "88823c2015ffd5fa89d567e17297a137",
+    "url": "/static/media/Roboto-Light.88823c20.ttf"
   },
   {
     "revision": "cd379838291ecb813f82093cede7a11a",
