@@ -18,13 +18,17 @@
   /* background-color: #0a192f;
   color: #e6f1ff; */
 }
+*::selection {
+  background-color: var(--color-primary);
+  color: #fff;
+}
 
 h1 { 
   font-size: calc(2em + 2.5vw);
   font-family: 'Coolvetica', sans-serif;
 }
 h2 { 
-  font-size: calc(1.2em + 0.8vw);
+  font-size: calc(1.3em + 0.7vw);
   /* font-family: 'Coolvetica', sans-serif; */
   color: var(--color-primary)
 }
@@ -34,8 +38,22 @@ h3 {
   font-weight: 400;
 }
 p {
-  font-size: calc(1em + 0.2vw);
+  font-size: calc(0.9em + 0.2vw);
 }
+li {
+  font-size: calc(0.9em + 0.2vw);
+}
+blockquote {
+  font-size: calc(0.9em + 0.2vw);
+  font-style: italic;
+}
+blockquote footer {
+  font-size: calc(0.8em + 0.08vw);
+}
+#skills footer {
+  font-size: calc(0.8em + 0.08vw);
+}
+
 
 
 
@@ -50,7 +68,8 @@ nav {
 
 
 main {
-  padding: 0 calc(15vw);
+  padding: 0 5vw;
+  margin: 0 auto;
 }
 main section {
   padding: 30px 0;
@@ -64,6 +83,55 @@ main section {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+#about blockquote {
+  background-color: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 0;
+  padding: 0.8em 1em;
+}
+#about blockquote::before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+#about blockquote footer {
+  color: #aaa;
+  margin-top: 0.5em;
+  padding: 0;
+  display: block;
+  text-align: right;
+  font-style: normal;
+  font-weight: bold;
+}
+#about blockquote footer::before {
+  content: "\2015";
+}
+#skills ul {
+  list-style: none;
+}
+#skills ul li::before {
+  content: "\25B6";
+  color: var(--color-primary);
+  font-weight: bold;
+  display: inline-block;
+  width: 1.5em;
+  margin-left: -1em;
+}
+#skills footer {
+  color: #888;
+  margin-top: 1em;
+  padding: 0;
+  display: block;
+}
+#skills footer::before {
+  content: "* ";
+}
+#work {
+  display: none;
 }
 
 
@@ -92,4 +160,35 @@ footer ul li a svg:hover {
 }
 footer div {
   margin-top: 10px;
+  text-align: center;
+}
+
+
+
+
+
+@media screen and (min-width: 360px) {
+  main {
+    padding: 0 10vw;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  main {
+    padding: 0 15vw;
+  }
+  footer div br {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 960px) {
+
+}
+
+@media screen and (min-width: 1440px) {
+  main {
+    padding: 0;
+    width: 960px
+  }
 }
