@@ -2,12 +2,17 @@
   --color-primary: #7d33d1;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;700;900&display=swap');
 @font-face {
   font-family: 'Coolvetica';
   font-style: normal;
   font-weight: 400;
   src: url('./fonts/coolvetica-rg.ttf');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/Roboto-Light.ttf');
 }
 
 
@@ -22,35 +27,32 @@
   background-color: var(--color-primary);
   color: #fff;
 }
-
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: calc(0.9em + 0.1vw);
+}
 h1 { 
   font-size: calc(2em + 2.5vw);
   font-family: 'Coolvetica', sans-serif;
 }
 h2 { 
-  font-size: calc(1.3em + 0.7vw);
-  /* font-family: 'Coolvetica', sans-serif; */
+  font-size: calc(1.8em + 0.7vw);
+  font-family: 'Coolvetica', sans-serif;
   color: var(--color-primary)
 }
 h3 { 
-  font-size: calc(1em + 0.5vw);
+  font-size: calc(1em + 0.3vw);
   font-family: 'Recursive', sans-serif;
   font-weight: 400;
 }
 p {
-  font-size: calc(0.9em + 0.2vw);
-}
-li {
-  font-size: calc(0.9em + 0.2vw);
+  line-height: 1.6em;
 }
 blockquote {
-  font-size: calc(0.9em + 0.2vw);
   font-style: italic;
+  line-height: 1.6em;
 }
-blockquote footer {
-  font-size: calc(0.8em + 0.08vw);
-}
-#skills footer {
+footer {
   font-size: calc(0.8em + 0.08vw);
 }
 
@@ -99,10 +101,8 @@ main section {
   vertical-align: -0.4em;
 }
 #about blockquote footer {
-  color: #aaa;
+  color: #a9a9a9;
   margin-top: 0.5em;
-  padding: 0;
-  display: block;
   text-align: right;
   font-style: normal;
   font-weight: bold;
@@ -124,8 +124,6 @@ main section {
 #skills footer {
   color: #888;
   margin-top: 1em;
-  padding: 0;
-  display: block;
 }
 #skills footer::before {
   content: "* ";
@@ -138,27 +136,27 @@ main section {
 
 
 
-footer {
+footer#footer {
   margin-top: 15px;
   padding: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-footer ul {
+footer#footer ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
   display: flex;
 }
-footer ul li {
+footer#footer ul li {
   padding-left: 8px;
   padding-right: 8px;
 }
-footer ul li a svg:hover {
+footer#footer ul li a svg:hover {
   fill: var(--color-primary);
 }
-footer div {
+footer#footer div {
   margin-top: 10px;
   text-align: center;
 }
@@ -183,12 +181,8 @@ footer div {
 }
 
 @media screen and (min-width: 960px) {
-
-}
-
-@media screen and (min-width: 1440px) {
   main {
     padding: 0;
-    width: 960px
+    width: 720px
   }
 }

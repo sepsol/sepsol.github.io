@@ -71,7 +71,7 @@ function App() {
         </section>
       </main>
       
-      <footer>
+      <footer id="footer">
         <ul>
           <li><a class="social github" target="_blank" href="https://github.com/sepsol"><Github color="#000" size={24}/></a></li>
           <li><a class="social gitlab" target="_blank" href="https://gitlab.com/sepsol"><Gitlab color="#000" size={24}/></a></li>
