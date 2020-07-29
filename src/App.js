@@ -40,13 +40,28 @@ function App() {
         
         <section id="about">
           <h2>About</h2>
-          <p>
-            Hi this is sepehr
-          </p>
+          <p>Hello! I'm Sepehr, a full-stack software engineer and web developer based in San Francisco Bay Area, CA.</p>
+          <p>I love tech and have been a tech-enthusiast since 7 years ago, and recently I decided to roll up my sleeves and be the builder of the things that have always interested me. During the past 4 years, I've founded and worked for different startups in various positions, which allowed me to meet many nice talented people and entrepreneurs.</p>
+          <p>I have worked with a lot of popular software programs before becoming a developer and one of the most valuable skills I've learned from my past journey, is how to find high-quality resources and link myself to appropriate people to learn new skills. I recognize myself as a fast-learner, and you don't have to take my word for it! I was well-known at my university for my well-rounded research and presentation on various subjects. Plus, here's how my previous employer describes me in my recommendation letter:</p>
+          <blockquote>We think that Sepehr has a high speed in learning programming concepts.</blockquote>
+          <p>- Sina Maleki (jsina.maleki@gmail.com)</p>
+          <p>As a software engineer, I enjoy using my skills to make innovative things that solve real-world problems and I love to bridge the gap between engineering and design.</p>
+          <p>When I'm not working, I either watch YouTube for fun or to expand my knowledge, play with the UI/UX of other apps and try to come up with my twist on their concept, or sometimes play video games :)</p>
         </section>
         
         <section id="skills">
           <h2>Skills</h2>
+          <p>I'm always working hard to expand my skill-set. Here are a few technologies I've been working with recently:</p>
+          <ul>
+            <li>JavaScript (ES6) / TypeScript</li>
+            <li>React.js / React Native</li>
+            <li>Node.js</li>
+            <li>Express.js / REST-ful APIs</li>
+            <li>GraphQL / Apollo</li>
+            <li>HTML & (S)CSS</li>
+            <li>MongoDB / No SQL</li>
+          </ul>
+          <p>*  Other technologies I've worked with include but are not limited to Git / Bash / Chrome DevTools / Postman / Heroku / Ngrok / Nodemon / Shopify Polaris / Formik / Yup / Fonk and outside the world of programming I've worked with Adobe Creative Cloud / Microsoft Office / Trimble SketchUp / McNeel Rhinoceros / Autodesk Products</p>
         </section>
         
         <section id="work">
