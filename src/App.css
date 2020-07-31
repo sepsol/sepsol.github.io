@@ -6,13 +6,13 @@
   font-family: 'Coolvetica';
   font-style: normal;
   font-weight: 400;
-  src: url('./fonts/coolvetica-rg.ttf');
+  src: url('./assets/fonts/coolvetica-rg.ttf');
 }
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: url('./fonts/Roboto-Light.ttf');
+  src: url('./assets/fonts/Roboto-Light.ttf');
 }
 
 
@@ -111,16 +111,17 @@ main section {
   content: "\2015";
 }
 #skills ul {
-  list-style: none;
+  /* list-style: none; */
+  list-style-image: url('./assets/icons/iconmonstr-arrow-34-16.png');
 }
-#skills ul li::before {
+/* #skills ul li::before {
   content: "\25B6";
   color: var(--color-primary);
   font-weight: bold;
   display: inline-block;
   width: 1.5em;
   margin-left: -1em;
-}
+} */
 #skills footer {
   color: #888;
   margin-top: 1em;
