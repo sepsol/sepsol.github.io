@@ -61,6 +61,7 @@ footer {
 
 
 
+
 nav {
   display: none;
 }
@@ -166,6 +167,7 @@ footer#footer div {
 
 
 
+
 @media screen and (min-width: 360px) {
   main {
     padding: 0 10vw;
@@ -185,5 +187,13 @@ footer#footer div {
   main {
     padding: 0;
     width: 720px
+  }
+}
+
+
+h1, h2 {letter-spacing: 0;}
+@media screen and (max-width: 480px) { 
+  .selector:not(*:root), h1, h2 {
+    letter-spacing: 0.04em;
   }
 }
