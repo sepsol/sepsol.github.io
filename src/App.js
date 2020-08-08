@@ -64,6 +64,7 @@ function App() {
             <li>HTML & (S)CSS</li>
             <li>MongoDB / No-SQL</li>
             <li>MySQL / SQL</li>
+            <li>WordPress</li>
           </ul>
           <footer>Other technologies I've worked with include but are not limited to Git / Bash / Chrome DevTools / Postman / Netlify / Heroku / Ngrok / Nodemon / Shopify Polaris / Formik / Yup / Fonk and outside the world of programming I've worked with Adobe Creative Cloud / Microsoft Office / Trimble SketchUp / McNeel Rhinoceros / Autodesk Products</footer>
         </section>
@@ -71,7 +72,7 @@ function App() {
         <section id="work">
           <h2>Work</h2>
         </section>
-        
+
         <section id="wip">
           <img src={require("./assets/gif/working-on-it.gif")} />
         </section>
