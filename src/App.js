@@ -45,7 +45,7 @@ function App() {
           </ul>
           <ul>
             <li><a href="#">CONTACT</a></li>
-            <li><a href="#">RESUME</a></li>
+            <li><a href="https://app.box.com/s/73tauyvan7s4hg3l5g0vmi79zb4sbndz" target="_blank">RESUME</a></li>
           </ul>
         </nav>
       </header>
