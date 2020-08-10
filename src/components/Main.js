@@ -4,6 +4,8 @@ import './Main.css';
 import Fade from 'react-reveal/Fade';
 import Bounce from 'react-reveal/Bounce';
 
+import WIP from './WIP';
+
 
 
 function Main() {
@@ -59,6 +61,8 @@ function Main() {
           <h2>Work</h2>
         </section>
       </Fade>
+
+      <WIP/>
     </main>
   );
 }
