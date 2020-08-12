@@ -22,7 +22,7 @@ function Main() {
         </Bounce>
         {/* </Fade> */}
         <Fade>
-          <h3>Get in touch 👉 <a href="mailto:sepsol@techie.com" target="_blank">sepsol@techie.com</a></h3>
+          <h3>Get in touch 👉 <a href="mailto:sepsol.works@gmail.com" target="_blank">sepsol.works@gmail.com</a></h3>
         </Fade>
       </section>
       
