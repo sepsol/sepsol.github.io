@@ -1,8 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Hamburger.css";
 
 function Hamburger() {
   function handleAnimation(e) {
+    const navLinks = document.querySelector(".nav-links");
+    navLinks.classList.toggle("nav-links-active");
     e.target.classList.toggle("burger-active");
   }
   return (

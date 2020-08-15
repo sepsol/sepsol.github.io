@@ -22,8 +22,10 @@ function Header() {
   return (
     <header>
       <nav className="no-select">
-        <button onClick={goToTop}>SEPSOL</button>
-        <ul>
+        <button onClick={goToTop} className="site-logo">
+          SEPSOL
+        </button>
+        <ul className="nav-links">
           <li>
             <button onClick={goToAbout}>About</button>
           </li>

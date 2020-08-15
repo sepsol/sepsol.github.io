@@ -1,12 +1,17 @@
+header {
+  padding: 0.5em 10vw;
+  background-color: var(--color-primary);
+  /* height: 8vh; */
+  width: 100vw;
+  z-index: 2;
+  position: fixed;
+  box-sizing: border-box;
+}
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.6em 0.2em;
-  background-color: var(--color-primary);
-  width: 100%;
-  z-index: 1;
-  position: fixed;
+  flex-shrink: 0;
 }
 nav * {
   list-style-type: none;
@@ -38,13 +43,40 @@ button {
 button:hover {
   opacity: 0.6;
 }
+.site-logo {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
 #resume {
-  border: 1px solid #fff;
-  padding: 0.6em 0.8em;
+  border: 2px solid #fff;
+  padding: 0.3em 0.5em;
   border-radius: 0.5em;
   transition: 0.3s;
 }
 #resume:hover {
   background-color: #fff;
   color: var(--color-primary);
+}
+
+@media screen and (max-width: 480px) {
+  nav ul {
+    position: absolute;
+    background-color: var(--color-primary);
+    flex-direction: column;
+    width: 100vw;
+    top: calc(1.08em - 0.05vw + 0.5em + 0.3em);
+    left: 0;
+    padding: 2em;
+    box-sizing: border-box;
+    z-index: 1;
+    transform: translateY(-111%);
+    transition: 0.2s;
+  }
+  nav ul * {
+    padding: 0.5em 0;
+  }
+  .nav-links-active {
+    transform: translateY(0);
+  }
 }

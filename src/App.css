@@ -28,7 +28,7 @@ body {
   font-size: calc(0.9em + 0.1vw);
 }
 header * {
-  font-size: calc(0.8em + 0.5vw);
+  font-size: calc(1.08em - 0.05vw);
   font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
