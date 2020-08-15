@@ -1,4 +1,5 @@
 import React from "react";
+import Hamburger from "./Hamburger";
 import "./Header.css";
 
 function Header() {
@@ -43,6 +44,7 @@ function Header() {
             </a>
           </li>
         </ul>
+        <Hamburger />
       </nav>
     </header>
   );

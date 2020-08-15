@@ -1,0 +1,28 @@
+.burger {
+  display: flex;
+  flex-direction: column;
+}
+
+.burger div {
+  width: 18px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px;
+  transition: 0.2s;
+}
+
+.burger-active .line-1 {
+  transform: rotate(-45deg) translate(-7px, 6px);
+}
+.burger-active .line-2 {
+  opacity: 0;
+}
+.burger-active .line-3 {
+  transform: rotate(45deg) translate(-7px, -6px);
+}
+
+@media screen and (min-width: 600px) {
+  .burger {
+    display: none;
+  }
+}
