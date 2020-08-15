@@ -15,6 +15,9 @@ footer#footer ul li {
   padding-left: 8px;
   padding-right: 8px;
 }
+footer#footer ul li a svg {
+  transition: 0.1s;
+}
 footer#footer ul li a svg:hover {
   fill: var(--color-primary);
 }

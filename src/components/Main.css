@@ -21,6 +21,7 @@ main section {
 #home a {
   text-decoration: none;
   color: var(--color-primary);
+  transition: 0.1s;
 }
 #home a:hover {
   border-bottom: 3px solid var(--color-primary);

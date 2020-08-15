@@ -1,13 +1,9 @@
-import React from 'react';
-import './Header.css';
-
-
+import React from "react";
+import "./Header.css";
 
 function Header() {
-
-  function goToHome() {
-    const home = document.getElementById("home");
-    home.scrollIntoView({ behavior: "smooth" });
+  function goToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }
   function goToAbout() {
     const about = document.getElementById("about");
@@ -21,25 +17,35 @@ function Header() {
     const work = document.getElementById("work");
     work.scrollIntoView({ behavior: "smooth" });
   }
-  
-  return(
+
+  return (
     <header>
-      <nav>
+      <nav className="no-select">
+        <button onClick={goToTop}>SEPSOL</button>
         <ul>
-          <li onClick={goToHome}>Home</li>
-          <li onClick={goToAbout}>About</li>
-          <li onClick={goToSkills}>Skills</li>
-          <li onClick={goToWork}>Works</li>
-        </ul>
-        <ul>
-          <li><a href="#">Contact</a></li>
-          <li><a href="https://app.box.com/s/73tauyvan7s4hg3l5g0vmi79zb4sbndz" target="_blank">Resume</a></li>
+          <li>
+            <button onClick={goToAbout}>About</button>
+          </li>
+          <li>
+            <button onClick={goToSkills}>Skills</button>
+          </li>
+          <li>
+            <button onClick={goToWork}>Works</button>
+          </li>
+          <li>
+            <a
+              href="https://app.box.com/s/73tauyvan7s4hg3l5g0vmi79zb4sbndz"
+              target="_blank"
+              rel="noopener noreferrer"
+              id="resume"
+            >
+              Resume
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
   );
 }
-
-
 
 export default Header;

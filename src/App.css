@@ -1,23 +1,19 @@
 :root {
-  --color-primary: #EB6812;
+  --color-primary: #eb6812;
 }
 
 @font-face {
-  font-family: 'Coolvetica';
+  font-family: "Coolvetica";
   font-style: normal;
   font-weight: 400;
-  src: url('./assets/fonts/coolvetica-rg.ttf');
+  src: url("./assets/fonts/coolvetica-rg.ttf");
 }
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: url('./assets/fonts/Roboto-Light.ttf');
+  src: url("./assets/fonts/Roboto-Light.ttf");
 }
-
-
-
-
 
 .App {
   /* background-color: #0a192f;
@@ -28,26 +24,26 @@
   color: #fff;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: calc(0.9em + 0.1vw);
 }
-nav {
-  font-size: calc(0.8em + 0.3vw);
-  font-family: 'Roboto', sans-serif;
+header * {
+  font-size: calc(0.8em + 0.5vw);
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
-h1 { 
+h1 {
   font-size: calc(2em + 2.5vw);
-  font-family: 'Coolvetica', sans-serif;
+  font-family: "Coolvetica", sans-serif;
 }
-h2 { 
+h2 {
   font-size: calc(1.8em + 0.7vw);
-  font-family: 'Coolvetica', sans-serif;
-  color: var(--color-primary)
+  font-family: "Coolvetica", sans-serif;
+  color: var(--color-primary);
 }
-h3 { 
+h3 {
   font-size: calc(1em + 0.3vw);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
 p {
@@ -60,10 +56,6 @@ blockquote {
 footer {
   font-size: calc(0.8em + 0.08vw);
 }
-
-
-
-
 
 @media screen and (min-width: 360px) {
   main {
@@ -83,17 +75,18 @@ footer {
 @media screen and (min-width: 960px) {
   main {
     padding: 0;
-    width: 720px
+    width: 720px;
   }
 }
 
-
-
-
-
-h1, h2 {letter-spacing: 0;}
-@media screen and (max-width: 480px) { 
-  .selector:not(*:root), h1, h2 {
+h1,
+h2 {
+  letter-spacing: 0;
+}
+@media screen and (max-width: 480px) {
+  .selector:not(*:root),
+  h1,
+  h2 {
     letter-spacing: 0.04em;
   }
 }
