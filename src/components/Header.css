@@ -1,9 +1,7 @@
 .top-bar {
-  padding: 0.5em 10vw;
-  background-color: var(--color-primary);
   /* height: 8vh; */
   width: 100vw;
-  z-index: 2;
+  z-index: 1;
   position: fixed;
   box-sizing: border-box;
 }
@@ -41,8 +39,9 @@ nav.container ul.nav-links {
   max-width: 360px;
 }
 .nav-top {
-  padding: 0.6em 0;
-  z-index: 5;
+  padding: 1.1em 10vw;
+  background-color: var(--color-primary);
+  z-index: 2;
   display: flex;
   justify-content: space-between;
 }
