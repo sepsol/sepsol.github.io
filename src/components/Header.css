@@ -29,7 +29,7 @@
   opacity: 0.6;
   visibility: visible;
   /* filter: blur(20px); */
-  transition: 0.3s;
+  transition: 0.2s;
 }
 .nav-bg-deactive {
   opacity: 0;
