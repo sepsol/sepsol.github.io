@@ -1,4 +1,5 @@
 .top-bar {
+  background-color: var(--color-primary);
   /* height: 8vh; */
   width: 100vw;
   z-index: 1;
