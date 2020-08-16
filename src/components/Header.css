@@ -29,10 +29,10 @@
   opacity: 0.6;
   visibility: visible;
   /* filter: blur(20px); */
-  transition: 0.2s;
+  transition: 0.3s;
 }
 .nav-bg-deactive {
-  /* opacity: 0; */
+  opacity: 0;
   visibility: hidden;
   /* display: none; */
 }
@@ -45,7 +45,10 @@ nav.container {
   z-index: 2;
 }
 
-nav.container * {
+.site-logo,
+.burger,
+button,
+a {
   color: #fff;
   cursor: pointer;
 }

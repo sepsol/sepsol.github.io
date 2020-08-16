@@ -15,17 +15,17 @@ function Header() {
   }
   function goToAbout() {
     const about = document.getElementById("about");
-    about.scrollIntoView({ block: "end", behavior: "smooth" });
+    about.scrollIntoView({ block: "start", behavior: "smooth" });
     setToggled(false);
   }
   function goToSkills() {
     const skills = document.getElementById("skills");
-    skills.scrollIntoView({ block: "end", behavior: "smooth" });
+    skills.scrollIntoView({ block: "start", behavior: "smooth" });
     setToggled(false);
   }
   function goToWork() {
     const work = document.getElementById("work");
-    work.scrollIntoView({ block: "end", behavior: "smooth" });
+    work.scrollIntoView({ block: "start", behavior: "smooth" });
     setToggled(false);
   }
 
