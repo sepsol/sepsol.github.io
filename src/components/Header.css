@@ -18,12 +18,31 @@
   /* for chrome on android */
   -webkit-tap-highlight-color: transparent;
 }
+.nav-bg {
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  opacity: 0.6;
+  visibility: visible;
+  /* filter: blur(20px); */
+  transition: 0.2s;
+}
+.nav-bg-deactive {
+  /* opacity: 0; */
+  visibility: hidden;
+  /* display: none; */
+}
 nav.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1020px;
   margin: 0 auto;
+  z-index: 2;
 }
 
 nav.container * {

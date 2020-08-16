@@ -11,18 +11,22 @@ function Header() {
 
   function goToTop() {
     window.scrollTo({ top: 0, behavior: "smooth" });
+    setToggled(false);
   }
   function goToAbout() {
     const about = document.getElementById("about");
-    about.scrollIntoView({ behavior: "smooth" });
+    about.scrollIntoView({ block: "end", behavior: "smooth" });
+    setToggled(false);
   }
   function goToSkills() {
     const skills = document.getElementById("skills");
-    skills.scrollIntoView({ behavior: "smooth" });
+    skills.scrollIntoView({ block: "end", behavior: "smooth" });
+    setToggled(false);
   }
   function goToWork() {
     const work = document.getElementById("work");
-    work.scrollIntoView({ behavior: "smooth" });
+    work.scrollIntoView({ block: "end", behavior: "smooth" });
+    setToggled(false);
   }
 
   return (
@@ -56,6 +60,10 @@ function Header() {
           </li>
         </ul>
       </nav>
+      <div
+        className={`nav-bg ${toggled ? "" : "nav-bg-deactive"}`}
+        onClick={handleToggle}
+      ></div>
     </header>
   );
 }
