@@ -1,6 +1,7 @@
 .top-bar {
   background-color: var(--color-primary);
   /* height: 8vh; */
+  padding: 0.6em 10vw;
   width: 100vw;
   z-index: 1;
   position: fixed;
@@ -40,7 +41,7 @@ nav.container ul.nav-links {
   max-width: 360px;
 }
 .nav-top {
-  padding: 1.1em 10vw;
+  padding: 0.5em 0;
   background-color: var(--color-primary);
   z-index: 2;
   display: flex;
@@ -86,8 +87,12 @@ button:hover {
 }
 
 @media screen and (max-width: 480px) {
+  .top-bar {
+    padding: 0;
+  }
   .nav-top {
     width: 100%;
+    padding: 1.1em 10vw;
   }
   nav.container ul.nav-links {
     position: absolute;
