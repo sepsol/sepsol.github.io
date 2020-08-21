@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import Hamburger from "./Hamburger";
-import "./Header.css";
+import React, { useState } from 'react';
+import Hamburger from './Hamburger';
+import './Header.css';
 
 function Header() {
   const [toggled, setToggled] = useState(false);
@@ -10,22 +10,22 @@ function Header() {
   }
 
   function goToTop() {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     setToggled(false);
   }
   function goToAbout() {
-    const about = document.getElementById("about");
-    about.scrollIntoView({ block: "start", behavior: "smooth" });
+    const about = document.getElementById('about');
+    about.scrollIntoView({ block: 'start', behavior: 'smooth' });
     setToggled(false);
   }
   function goToSkills() {
-    const skills = document.getElementById("skills");
-    skills.scrollIntoView({ block: "start", behavior: "smooth" });
+    const skills = document.getElementById('skills');
+    skills.scrollIntoView({ block: 'start', behavior: 'smooth' });
     setToggled(false);
   }
   function goToWork() {
-    const work = document.getElementById("work");
-    work.scrollIntoView({ block: "start", behavior: "smooth" });
+    const work = document.getElementById('work');
+    work.scrollIntoView({ block: 'start', behavior: 'smooth' });
     setToggled(false);
   }
 
@@ -38,7 +38,7 @@ function Header() {
           </button>
           <Hamburger onClick={handleToggle} toggled={toggled} />
         </div>
-        <ul className={toggled ? "nav-links nav-links-active" : "nav-links"}>
+        <ul className={toggled ? 'nav-links nav-links-active' : 'nav-links'}>
           <li>
             <button onClick={goToAbout}>About</button>
           </li>
@@ -61,7 +61,7 @@ function Header() {
         </ul>
       </nav>
       <div
-        className={`nav-bg ${toggled ? "" : "nav-bg-deactive"}`}
+        className={`nav-bg ${toggled ? '' : 'nav-bg-deactive'}`}
         onClick={handleToggle}
       ></div>
     </header>

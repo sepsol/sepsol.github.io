@@ -3,16 +3,16 @@
 }
 
 @font-face {
-  font-family: "Coolvetica";
+  font-family: 'Coolvetica';
   font-style: normal;
   font-weight: 400;
-  src: url("./assets/fonts/coolvetica-rg.ttf");
+  src: url('./assets/fonts/coolvetica-rg.ttf');
 }
 @font-face {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: url("./assets/fonts/Roboto-Light.ttf");
+  src: url('./assets/fonts/Roboto-Light.ttf');
 }
 
 .App {
@@ -24,26 +24,26 @@
   color: #fff;
 }
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: calc(0.9em + 0.1vw);
 }
 header * {
   font-size: calc(1.08em - 0.05vw);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
 h1 {
   font-size: calc(2em + 2.5vw);
-  font-family: "Coolvetica", sans-serif;
+  font-family: 'Coolvetica', sans-serif;
 }
 h2 {
   font-size: calc(1.8em + 0.7vw);
-  font-family: "Coolvetica", sans-serif;
+  font-family: 'Coolvetica', sans-serif;
   color: var(--color-primary);
 }
 h3 {
   font-size: calc(1em + 0.3vw);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
 p {

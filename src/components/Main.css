@@ -48,7 +48,7 @@ main section {
   font-weight: bold;
 }
 #about blockquote footer::before {
-  content: "\2015";
+  content: '\2015';
 }
 #skills ul {
   /* list-style: none; */
@@ -67,8 +67,8 @@ main section {
   margin-top: 1em;
 }
 #skills footer::before {
-  content: "* ";
+  content: '* ';
 }
 #work {
-  display: none;
+  /* display: none; */
 }
