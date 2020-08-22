@@ -1,0 +1,26 @@
+import React from 'react';
+import './Works.css';
+import Data from '../database/works.json';
+
+function Works() {
+  return Data.map(work => (
+    <div className="work-card">
+      <div className="work-side">
+        <h4 className="work-title">{work.title}</h4>
+        <p className="work-description">{work.description}</p>
+        <ul className="work-techs">
+          {work.techs.map(tech => (
+            <li>{tech}</li>
+          ))}
+        </ul>
+      </div>
+      <img
+        className="work-hero"
+        src={work.img.hero.base64}
+        alt={work.img.hero.alt}
+      />
+    </div>
+  ));
+}
+
+export default Works;

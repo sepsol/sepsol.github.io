@@ -4,7 +4,7 @@ import './Main.css';
 import Fade from 'react-reveal/Fade';
 import Bounce from 'react-reveal/Bounce';
 
-import WorkCard from './WorkCard';
+import Works from './Works';
 import WIP from './WIP';
 
 function Main() {
@@ -101,7 +101,7 @@ function Main() {
 
         <section id="work">
           <h2>Works</h2>
-          <WorkCard />
+          <Works />
         </section>
       </Fade>
 
