@@ -1,3 +1,11 @@
+.work-title {
+  margin-top: 0.1em;
+}
+
+.work-description {
+  font-size: calc(0.8em + 0.08vw);
+}
+
 .work-card {
   --hero-size: 65;
   display: flex;
@@ -9,12 +17,26 @@
 }
 
 .work-hero {
-  width: 70%;
+  width: 68%;
 }
 
 .work-side {
-  width: 25%;
+  width: 28%;
 }
 
-.work-description {
+.work-techs {
+  padding: 0;
+  list-style-type: none;
+  /* line-height: 1.7em; */
+}
+
+.work-tag {
+  font-size: calc(0.8em + 0.08vw);
+  font-weight: bold;
+  display: inline-block;
+  padding: 0.15em 0.3em;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: 0.35em;
+  margin: 0.3em 0.25em;
 }

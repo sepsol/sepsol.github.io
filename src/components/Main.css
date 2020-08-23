@@ -69,6 +69,3 @@ main section {
 #skills footer::before {
   content: '* ';
 }
-#work {
-  /* display: none; */
-}

@@ -7,10 +7,10 @@ function Works() {
     <div className="work-card">
       <div className="work-side">
         <h4 className="work-title">{work.title}</h4>
-        <p className="work-description">{work.description}</p>
+        <p className="work-description">{work.description.short}</p>
         <ul className="work-techs">
           {work.techs.map(tech => (
-            <li>{tech}</li>
+            <li className="work-tag">{tech}</li>
           ))}
         </ul>
       </div>
