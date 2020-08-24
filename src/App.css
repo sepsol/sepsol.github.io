@@ -33,7 +33,7 @@ header * {
   font-weight: bold;
 }
 h1 {
-  font-size: calc(2em + 2.5vw);
+  font-size: calc(3em + 2vw);
   font-family: 'Coolvetica', sans-serif;
 }
 h2 {
@@ -72,8 +72,6 @@ footer {
   }
 }
 
-
-
 @media screen and (min-width: 960px) {
   main {
     padding: 0;
@@ -85,7 +83,6 @@ h1,
 h2 {
   letter-spacing: 0;
 }
-
 @media screen and (max-width: 480px) {
   .selector:not(*:root),
   h1,
