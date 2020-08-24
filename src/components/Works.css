@@ -2,13 +2,16 @@
   font-size: calc(0.8em + 0.08vw);
 }
 
+.work-card-container {
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+
 .work-card {
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-between;
   align-items: flex-start;
-  width: 100%;
-  margin-bottom: 3em;
 }
 
 .work-hero {
@@ -37,17 +40,24 @@
 }
 
 @media screen and (min-width: 720px) {
-  .work-title {
-    margin-top: 0.1em;
+  .work-card-container {
+    margin-bottom: 4em;
   }
-  .work-card {
+  .work-card-container:nth-child(odd) > .work-card {
     flex-direction: row-reverse;
-    width: 100%;
+    /* flex-direction: row; */
+  }
+  .work-card-container:nth-child(even) > .work-card {
+    flex-direction: row;
+    /* flex-direction: row-reverse; */
   }
   .work-hero {
     width: 68%;
   }
   .work-side {
     width: 28%;
+  }
+  .work-title {
+    margin-top: 0.5em;
   }
 }

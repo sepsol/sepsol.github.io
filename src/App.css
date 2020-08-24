@@ -72,21 +72,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 720px) {
-  .work-title {
-    margin-top: 0.1em;
-  }
-  .work-card {
-    flex-direction: row-reverse;
-    width: 100%;
-  }
-  .work-hero {
-    width: 68%;
-  }
-  .work-side {
-    width: 28%;
-  }
-}
+
 
 @media screen and (min-width: 960px) {
   main {
