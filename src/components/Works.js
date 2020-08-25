@@ -17,6 +17,7 @@ function Works() {
         </div>
         <img
           className="work-hero"
+          srcSet={`${work.img.hero.mobile} 480w, ${work.img.hero.desktop} 1280w`}
           src={work.img.hero.desktop}
           alt={work.img.hero.alt}
         />
