@@ -9,8 +9,8 @@
     },
     "img": {
       "hero": {
-        "desktop": "https://raw.githubusercontent.com/sepsol/sepsol.github.io/react-code/src/assets/works/job-board.png",
-        "mobile": "https://raw.githubusercontent.com/sepsol/sepsol.github.io/react-code/src/assets/works/job-board-mobile.png",
+        "desktop": "https://raw.githubusercontent.com/sepsol/sepsol.github.io/react-code/src/assets/works/job-board.webp",
+        "mobile": "https://raw.githubusercontent.com/sepsol/sepsol.github.io/react-code/src/assets/works/job-board-mobile.webp",
         "alt": "mobile and desktop mockup of the jobseeking website"
       },
       "screenshots": []
@@ -45,8 +45,8 @@
     },
     "img": {
       "hero": {
-        "desktop": "https://raw.githubusercontent.com/sepsol/sepsol.github.io/react-code/src/assets/works/minimal-todo.png",
-        "mobile": "https://raw.githubusercontent.com/sepsol/sepsol.github.io/react-code/src/assets/works/minimal-todo-mobile.png",
+        "desktop": "https://raw.githubusercontent.com/sepsol/sepsol.github.io/react-code/src/assets/works/minimal-todo.webp",
+        "mobile": "https://raw.githubusercontent.com/sepsol/sepsol.github.io/react-code/src/assets/works/minimal-todo-mobile.webp",
         "alt": "mobile mockup of the todo app"
       },
       "screenshots": []
@@ -81,8 +81,8 @@
     },
     "img": {
       "hero": {
-        "desktop": "https://raw.githubusercontent.com/sepsol/sepsol.github.io/react-code/src/assets/works/food-explore.png",
-        "mobile": "https://raw.githubusercontent.com/sepsol/sepsol.github.io/react-code/src/assets/works/food-explore-mobile.png",
+        "desktop": "https://raw.githubusercontent.com/sepsol/sepsol.github.io/react-code/src/assets/works/food-explore.webp",
+        "mobile": "https://raw.githubusercontent.com/sepsol/sepsol.github.io/react-code/src/assets/works/food-explore-mobile.webp",
         "alt": "mobile mockup of the food explore app"
       },
       "screenshots": []
@@ -111,8 +111,8 @@
     },
     "img": {
       "hero": {
-        "desktop": "https://raw.githubusercontent.com/sepsol/sepsol.github.io/react-code/src/assets/works/cosmo-junkie.png",
-        "mobile": "https://raw.githubusercontent.com/sepsol/sepsol.github.io/react-code/src/assets/works/cosmo-junkie-mobile.png",
+        "desktop": "https://raw.githubusercontent.com/sepsol/sepsol.github.io/react-code/src/assets/works/cosmo-junkie.webp",
+        "mobile": "https://raw.githubusercontent.com/sepsol/sepsol.github.io/react-code/src/assets/works/cosmo-junkie-mobile.webp",
         "alt": "desktop and mobile mockup of the portfolio website"
       },
       "screenshots": []
@@ -134,8 +134,8 @@
     },
     "img": {
       "hero": {
-        "desktop": "https://raw.githubusercontent.com/sepsol/sepsol.github.io/react-code/src/assets/works/collect-social.png",
-        "mobile": "https://raw.githubusercontent.com/sepsol/sepsol.github.io/react-code/src/assets/works/collect-social-mobile.png",
+        "desktop": "https://raw.githubusercontent.com/sepsol/sepsol.github.io/react-code/src/assets/works/collect-social.webp",
+        "mobile": "https://raw.githubusercontent.com/sepsol/sepsol.github.io/react-code/src/assets/works/collect-social-mobile.webp",
         "alt": "mobile mockup of the social media app concept"
       },
       "screenshots": []
@@ -157,8 +157,8 @@
     },
     "img": {
       "hero": {
-        "desktop": "https://raw.githubusercontent.com/sepsol/sepsol.github.io/react-code/src/assets/works/architectural-vr.png",
-        "mobile": "https://raw.githubusercontent.com/sepsol/sepsol.github.io/react-code/src/assets/works/architectural-vr-mobile.png",
+        "desktop": "https://raw.githubusercontent.com/sepsol/sepsol.github.io/react-code/src/assets/works/architectural-vr.webp",
+        "mobile": "https://raw.githubusercontent.com/sepsol/sepsol.github.io/react-code/src/assets/works/architectural-vr-mobile.webp",
         "alt": "desktop mockup of the project in unreal engine"
       },
       "screenshots": []
@@ -180,8 +180,8 @@
     },
     "img": {
       "hero": {
-        "desktop": "https://raw.githubusercontent.com/sepsol/sepsol.github.io/react-code/src/assets/works/shahr-yar.png",
-        "mobile": "https://raw.githubusercontent.com/sepsol/sepsol.github.io/react-code/src/assets/works/shahr-yar-mobile.png",
+        "desktop": "https://raw.githubusercontent.com/sepsol/sepsol.github.io/react-code/src/assets/works/shahr-yar.webp",
+        "mobile": "https://raw.githubusercontent.com/sepsol/sepsol.github.io/react-code/src/assets/works/shahr-yar-mobile.webp",
         "alt": "desktop mockup of the urban management mvp app concept"
       },
       "screenshots": []
