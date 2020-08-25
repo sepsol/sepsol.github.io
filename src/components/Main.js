@@ -42,7 +42,7 @@ function Main() {
         </Fade>
       </section>
 
-      <Fade bottom cascade>
+      <Fade bottom fraction={0.2} distance="50px">
         <section id="about">
           <h2>About</h2>
           <p>
@@ -83,7 +83,9 @@ function Main() {
             my twist on their concept, or sometimes play video games :)
           </p>
         </section>
+      </Fade>
 
+      <Fade bottom fraction={0.2} distance="50px">
         <section id="skills">
           <h2>Skills</h2>
           <p>
@@ -110,7 +112,9 @@ function Main() {
             Products
           </footer>
         </section>
+      </Fade>
 
+      <Fade bottom fraction={0.05} distance="50px">
         <section id="work">
           <h2>Works</h2>
           <Works />
