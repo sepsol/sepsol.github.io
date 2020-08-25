@@ -14,7 +14,12 @@ function Main() {
         {/* <Fade bottom cascade> */}
         <Bounce cascade>
           <h1>
-            <div>Hi, 👋</div>
+            <div>
+              Hi,{' '}
+              <span role="img" aria-label="waving hand emoji">
+                👋
+              </span>
+            </div>
             <div>I'm Sepehr,</div>
             <div>web developer.</div>
           </h1>
@@ -22,8 +27,15 @@ function Main() {
         {/* </Fade> */}
         <Fade>
           <h3>
-            Get in touch 👉{' '}
-            <a href="mailto:sepsol.works@gmail.com" target="_blank">
+            Get in touch{' '}
+            <span role="img" aria-label="hand emoji pointing to the right">
+              👉
+            </span>{' '}
+            <a
+              href="mailto:sepsol.works@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               sepsol.works@gmail.com
             </a>
           </h3>
