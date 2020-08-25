@@ -35,7 +35,12 @@ function Footer() {
           </a>
         </li>
         <li>
-          <a class="social dev" target="_blank" href="https://dev.to/sepsol">
+          <a
+            class="social dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://dev.to/sepsol"
+          >
             <DevDotTo color="#000" size={32} />
           </a>
         </li>
