@@ -2,6 +2,7 @@ import React from 'react';
 import './Works.css';
 import Fade from 'react-reveal/Fade';
 import Data from '../database/works.json';
+import LazyLoad from 'react-lazyload';
 
 function Works() {
   return Data.map(work => (
@@ -17,12 +18,14 @@ function Works() {
               ))}
             </ul>
           </div>
-          <img
-            className="work-hero"
-            srcSet={`${work.img.hero.mobile} 480w, ${work.img.hero.desktop} 1280w`}
-            src={work.img.hero.desktop}
-            alt={work.img.hero.alt}
-          />
+          <LazyLoad>
+            <img
+              className="work-hero"
+              srcSet={`${work.img.hero.mobile} 480w, ${work.img.hero.desktop} 1280w`}
+              src={work.img.hero.desktop}
+              alt={work.img.hero.alt}
+            />
+          </LazyLoad>
         </div>
       </Fade>
     </div>
