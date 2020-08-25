@@ -17,7 +17,7 @@ function Works() {
         </div>
         <img
           className="work-hero"
-          src={work.img.hero.base64}
+          src={work.img.hero.desktop}
           alt={work.img.hero.alt}
         />
       </div>
