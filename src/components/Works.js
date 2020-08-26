@@ -1,6 +1,6 @@
-import React, { useContext } from 'react';
+import React from 'react';
 
-import { ScreenSizeContext } from '../contexts/ScreenSizeContext';
+import { useMediaQuery } from 'beautiful-react-hooks';
 import ConditionalWrapper from './ConditionalWrapper';
 
 import { LazyLoadComponent } from 'react-lazy-load-image-component';
@@ -12,12 +12,12 @@ import Data from '../database/works.json';
 import './Works.css';
 
 function Works() {
-  const { moreThan720 } = useContext(ScreenSizeContext);
+  const largeScreen = useMediaQuery('(min-width: 720px)');
 
   return Data.map(work => (
     <div className="work-card-container">
       <ConditionalWrapper
-        condition={moreThan720}
+        condition={largeScreen}
         wrapper={children => (
           <Fade bottom fraction={0.05} distance="70px">
             {children}

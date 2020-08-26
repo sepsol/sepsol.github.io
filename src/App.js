@@ -1,5 +1,4 @@
 import React from 'react';
-import ScreenSizeContextProvider from './contexts/ScreenSizeContext';
 import './App.css';
 
 import Header from './components/Header';
@@ -8,13 +7,11 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <ScreenSizeContextProvider>
-      <div className="App">
-        <Header />
-        <Main />
-        <Footer />
-      </div>
-    </ScreenSizeContextProvider>
+    <div className="App">
+      <Header />
+      <Main />
+      <Footer />
+    </div>
   );
 }
 

@@ -1,7 +1,8 @@
-import React, { useContext } from 'react';
+import React from 'react';
+import { useMediaQuery } from 'beautiful-react-hooks';
 
-import { ScreenSizeContext } from '../contexts/ScreenSizeContext';
 import ConditionalWrapper from './ConditionalWrapper';
+import SectionTitle from './SectionTitle';
 
 import Fade from 'react-reveal/Fade';
 import Bounce from 'react-reveal/Bounce';
@@ -12,13 +13,13 @@ import WIP from './WIP';
 import './Main.css';
 
 function Main() {
-  const { moreThan720 } = useContext(ScreenSizeContext);
+  const largeScreen = useMediaQuery('(min-width: 720px)');
 
   return (
     <main>
       <section id="home">
         <ConditionalWrapper
-          condition={moreThan720}
+          condition={largeScreen}
           wrapper={children => <Bounce cascade>{children}</Bounce>}
         >
           <h1>
@@ -33,7 +34,7 @@ function Main() {
           </h1>
         </ConditionalWrapper>
         <ConditionalWrapper
-          condition={moreThan720}
+          condition={largeScreen}
           wrapper={children => <Fade>{children}</Fade>}
         >
           <h3>
@@ -53,7 +54,7 @@ function Main() {
       </section>
 
       <ConditionalWrapper
-        condition={moreThan720}
+        condition={largeScreen}
         wrapper={children => (
           <Fade bottom fraction={0.2} distance="50px">
             {children}
@@ -61,7 +62,7 @@ function Main() {
         )}
       >
         <section id="about">
-          <h2>About</h2>
+          <SectionTitle>About</SectionTitle>
           <p>
             Hello! I'm Sepehr, a full-stack software engineer and web developer
             based in San Francisco Bay Area, CA.
@@ -103,7 +104,7 @@ function Main() {
       </ConditionalWrapper>
 
       <ConditionalWrapper
-        condition={moreThan720}
+        condition={largeScreen}
         wrapper={children => (
           <Fade bottom fraction={0.2} distance="50px">
             {children}
@@ -111,7 +112,7 @@ function Main() {
         )}
       >
         <section id="skills">
-          <h2>Skills</h2>
+          <SectionTitle>Skills</SectionTitle>
           <p>
             I'm always working hard to expand my skill-set. Here are a few
             technologies I've been working with recently*:
@@ -139,15 +140,15 @@ function Main() {
       </ConditionalWrapper>
 
       <ConditionalWrapper
-        condition={moreThan720}
+        condition={largeScreen}
         wrapper={children => (
           <Fade bottom fraction={0.05} distance="50px">
             {children}
           </Fade>
         )}
       >
-        <section id="work">
-          <h2>Works</h2>
+        <section id="works">
+          <SectionTitle>Works</SectionTitle>
           <Works />
         </section>
       </ConditionalWrapper>
