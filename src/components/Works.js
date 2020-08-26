@@ -1,13 +1,28 @@
-import React from 'react';
-import './Works.css';
-import Fade from 'react-reveal/Fade';
-import Data from '../database/works.json';
+import React, { useContext } from 'react';
+
+import { SizeContext } from '../contexts/SizeContext';
+import ConditionalWrapper from './ConditionalWrapper';
+
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
+import Fade from 'react-reveal/Fade';
+import Data from '../database/works.json';
+
+import './Works.css';
+
 function Works() {
+  const { moreThan720 } = useContext(SizeContext);
+
   return Data.map(work => (
     <div className="work-card-container">
-      <Fade bottom fraction={0.05} distance="70px">
+      <ConditionalWrapper
+        condition={moreThan720}
+        wrapper={children => (
+          <Fade bottom fraction={0.05} distance="70px">
+            {children}
+          </Fade>
+        )}
+      >
         <div className="work-card">
           <div className="work-side">
             <h4 className="work-title">{work.title}</h4>
@@ -26,7 +41,7 @@ function Works() {
             threshold={600}
           />
         </div>
-      </Fade>
+      </ConditionalWrapper>
     </div>
   ));
 }

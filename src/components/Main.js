@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
-import { AnimeContext } from '../contexts/AnimeContext';
-import './Main.css';
+
+import { SizeContext } from '../contexts/SizeContext';
+import ConditionalWrapper from './ConditionalWrapper';
 
 import Fade from 'react-reveal/Fade';
 import Bounce from 'react-reveal/Bounce';
@@ -8,13 +9,18 @@ import Bounce from 'react-reveal/Bounce';
 import Works from './Works';
 import WIP from './WIP';
 
+import './Main.css';
+
 function Main() {
-  const isSmall = useContext(AnimeContext);
+  const { moreThan720 } = useContext(SizeContext);
+
   return (
     <main>
       <section id="home">
-        {/* <Fade bottom cascade> */}
-        <Bounce cascade>
+        <ConditionalWrapper
+          condition={moreThan720}
+          wrapper={children => <Bounce cascade>{children}</Bounce>}
+        >
           <h1>
             <div>
               Hi,{' '}
@@ -25,9 +31,11 @@ function Main() {
             <div>I'm Sepehr,</div>
             <div>web developer.</div>
           </h1>
-        </Bounce>
-        {/* </Fade> */}
-        <Fade>
+        </ConditionalWrapper>
+        <ConditionalWrapper
+          condition={moreThan720}
+          wrapper={children => <Fade>{children}</Fade>}
+        >
           <h3>
             Get in touch{' '}
             <span role="img" aria-label="hand emoji pointing to the right">
@@ -41,13 +49,17 @@ function Main() {
               sepsol.works@gmail.com
             </a>
           </h3>
-        </Fade>
+        </ConditionalWrapper>
       </section>
 
-      {/* TEST */}
-      {isSmall ? 'small' : 'large'}
-
-      <Fade bottom fraction={0.2} distance="50px">
+      <ConditionalWrapper
+        condition={moreThan720}
+        wrapper={children => (
+          <Fade bottom fraction={0.2} distance="50px">
+            {children}
+          </Fade>
+        )}
+      >
         <section id="about">
           <h2>About</h2>
           <p>
@@ -88,9 +100,16 @@ function Main() {
             my twist on their concept, or sometimes play video games :)
           </p>
         </section>
-      </Fade>
+      </ConditionalWrapper>
 
-      <Fade bottom fraction={0.2} distance="50px">
+      <ConditionalWrapper
+        condition={moreThan720}
+        wrapper={children => (
+          <Fade bottom fraction={0.2} distance="50px">
+            {children}
+          </Fade>
+        )}
+      >
         <section id="skills">
           <h2>Skills</h2>
           <p>
@@ -117,14 +136,21 @@ function Main() {
             Products
           </footer>
         </section>
-      </Fade>
+      </ConditionalWrapper>
 
-      <Fade bottom fraction={0.05} distance="50px">
+      <ConditionalWrapper
+        condition={moreThan720}
+        wrapper={children => (
+          <Fade bottom fraction={0.05} distance="50px">
+            {children}
+          </Fade>
+        )}
+      >
         <section id="work">
           <h2>Works</h2>
           <Works />
         </section>
-      </Fade>
+      </ConditionalWrapper>
 
       <WIP />
     </main>
