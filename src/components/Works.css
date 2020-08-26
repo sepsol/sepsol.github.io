@@ -53,9 +53,12 @@
     flex-direction: row;
     /* flex-direction: row-reverse; */
   }
-  .work-hero {
+  .work-card > picture {
     width: 68%;
   }
+  /* .work-hero {
+    width: 68%;
+  } */
   .work-side {
     width: 28%;
   }

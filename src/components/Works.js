@@ -3,7 +3,8 @@ import React, { useContext } from 'react';
 import { ScreenSizeContext } from '../contexts/ScreenSizeContext';
 import ConditionalWrapper from './ConditionalWrapper';
 
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { LazyLoadComponent } from 'react-lazy-load-image-component';
+import { Picture } from 'react-responsive-picture';
 
 import Fade from 'react-reveal/Fade';
 import Data from '../database/works.json';
@@ -33,13 +34,33 @@ function Works() {
               ))}
             </ul>
           </div>
-          <LazyLoadImage
-            className="work-hero"
-            srcSet={`${work.img.hero.mobile} 480w, ${work.img.hero.desktop} 1280w`}
-            src={work.img.hero.desktop}
-            alt={work.img.hero.alt}
-            threshold={600}
-          />
+
+          <LazyLoadComponent visibleByDefault>
+            <Picture
+              className="work-hero"
+              alt={work.img.hero.alt}
+              sources={[
+                {
+                  srcSet: work.img.hero.mobile.webp,
+                  media: '(max-width: 480px)',
+                  type: 'image/webp'
+                },
+                {
+                  srcSet: work.img.hero.mobile.png,
+                  media: '(max-width: 480px)',
+                  type: 'image/png'
+                },
+                {
+                  srcSet: work.img.hero.desktop.webp,
+                  type: 'image/webp'
+                },
+                {
+                  srcSet: work.img.hero.desktop.png,
+                  type: 'image/png'
+                }
+              ]}
+            />
+          </LazyLoadComponent>
         </div>
       </ConditionalWrapper>
     </div>
