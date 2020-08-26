@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { AnimeContext } from '../contexts/AnimeContext';
 import './Main.css';
 
 import Fade from 'react-reveal/Fade';
@@ -8,6 +9,7 @@ import Works from './Works';
 import WIP from './WIP';
 
 function Main() {
+  const isSmall = useContext(AnimeContext);
   return (
     <main>
       <section id="home">
@@ -41,6 +43,9 @@ function Main() {
           </h3>
         </Fade>
       </section>
+
+      {/* TEST */}
+      {isSmall ? 'small' : 'large'}
 
       <Fade bottom fraction={0.2} distance="50px">
         <section id="about">
