@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 
-import { SizeContext } from '../contexts/SizeContext';
+import { ScreenSizeContext } from '../contexts/ScreenSizeContext';
 import ConditionalWrapper from './ConditionalWrapper';
 
 import { LazyLoadImage } from 'react-lazy-load-image-component';
@@ -11,7 +11,7 @@ import Data from '../database/works.json';
 import './Works.css';
 
 function Works() {
-  const { moreThan720 } = useContext(SizeContext);
+  const { moreThan720 } = useContext(ScreenSizeContext);
 
   return Data.map(work => (
     <div className="work-card-container">

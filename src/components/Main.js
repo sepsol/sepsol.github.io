@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 
-import { SizeContext } from '../contexts/SizeContext';
+import { ScreenSizeContext } from '../contexts/ScreenSizeContext';
 import ConditionalWrapper from './ConditionalWrapper';
 
 import Fade from 'react-reveal/Fade';
@@ -12,7 +12,7 @@ import WIP from './WIP';
 import './Main.css';
 
 function Main() {
-  const { moreThan720 } = useContext(SizeContext);
+  const { moreThan720 } = useContext(ScreenSizeContext);
 
   return (
     <main>
