@@ -74,10 +74,10 @@ button {
   border: none;
   outline: none;
   padding: 0;
-  transition: 0.2s;
+  transition: 0.15s;
 }
 button:hover {
-  opacity: 0.6;
+  opacity: 0.5;
 }
 .site-logo {
   text-align: left;
@@ -89,7 +89,7 @@ button:hover {
   padding: 0.3em 0.5em !important;
   border: 2px solid #fff;
   border-radius: 0.5em;
-  transition: 0.3s;
+  transition: 0.15s;
 }
 .resume:hover {
   background-color: #fff;
