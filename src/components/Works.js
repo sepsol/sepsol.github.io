@@ -20,14 +20,7 @@ import './Works.css';
 
 function Works() {
   const largeScreen = useMediaQuery('(min-width: 720px)');
-  const [hoverHint, setHoverHint] = useState(false);
-
-  function showHoverHint() {
-    setHoverHint(true);
-  }
-  function hideHoverHint() {
-    setHoverHint(false);
-  }
+  const [selectedLink, setSelectedLink] = useState(null);
 
   const linkMaps = {
     website: <Globe fill="#aaa" size={20} />,
@@ -53,9 +46,11 @@ function Works() {
               {work.links.map(link => (
                 <li>
                   <span
-                    className={
-                      hoverHint ? 'before show-hint' : 'before hide-hint'
-                    }
+                    className={`before no-select ${
+                      selectedLink === work.id + link.type + link.url
+                        ? 'show-hint'
+                        : 'hide-hint'
+                    }`}
                   >
                     {link.text}
                   </span>
@@ -63,15 +58,19 @@ function Works() {
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    onMouseOver={showHoverHint}
-                    onMouseOut={hideHoverHint}
+                    onMouseOver={() =>
+                      setSelectedLink(work.id + link.type + link.url)
+                    }
+                    onMouseOut={() => setSelectedLink(null)}
                   >
                     {linkMaps[link.type]}
                   </a>
                   <span
-                    className={
-                      hoverHint ? 'after show-hint' : 'after hide-hint'
-                    }
+                    className={`after no-select ${
+                      selectedLink === work.id + link.type + link.url
+                        ? 'show-hint'
+                        : 'hide-hint'
+                    }`}
                   >
                     {link.text}
                   </span>
@@ -84,7 +83,7 @@ function Works() {
             <p className="work-description">{work.description.short}</p>
             <ul className="work-techs">
               {work.techs.map(tech => (
-                <li className="work-tag">{tech}</li>
+                <li className="work-tag no-select">{tech}</li>
               ))}
             </ul>
           </div>

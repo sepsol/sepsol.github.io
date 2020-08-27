@@ -48,11 +48,11 @@
 }
 
 .work-card-container:nth-child(odd) .work-links {
-  right: -11em;
+  right: -9.5em;
   align-items: flex-start;
 }
 .work-card-container:nth-child(even) .work-links {
-  left: -11em;
+  left: -9.5em;
   align-items: flex-end;
 }
 
@@ -60,14 +60,14 @@
   display: none;
 }
 .work-card-container:nth-child(even) .before {
-  right: 0.5em;
+  right: 0.6em;
   transition: 0.1s;
 }
 .work-card-container:nth-child(even) .after {
   display: none;
 }
 .work-card-container:nth-child(odd) .after {
-  left: 0.5em;
+  left: 0.6em;
   transition: 0.2s;
 }
 
@@ -75,10 +75,10 @@
   opacity: 0;
 }
 .work-card-container:nth-child(even) .hide-hint {
-  transform: translateX(50%);
+  transform: translateX(60%);
 }
 .work-card-container:nth-child(odd) .hide-hint {
-  transform: translateX(-50%);
+  transform: translateX(-60%);
 }
 
 .show-hint {
@@ -94,7 +94,8 @@
 .work-links span {
   position: relative;
   top: -0.5em;
-  color: #888;
+  color: #666;
+  font-size: calc(0.8em + 0.08vw);
 }
 
 .work-hero {
@@ -120,6 +121,9 @@
   border: 1px solid var(--color-primary);
   border-radius: 0.35em;
   margin: 0.3em 0.25em;
+}
+
+.no-select {
   -moz-user-select: none;
   -webkit-user-select: none;
 }
