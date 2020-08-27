@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { useMediaQuery } from 'beautiful-react-hooks';
 import ConditionalWrapper from './ConditionalWrapper';
@@ -20,6 +20,14 @@ import './Works.css';
 
 function Works() {
   const largeScreen = useMediaQuery('(min-width: 720px)');
+  const [hoverHint, setHoverHint] = useState(false);
+
+  function showHoverHint() {
+    setHoverHint(true);
+  }
+  function hideHoverHint() {
+    setHoverHint(false);
+  }
 
   const linkMaps = {
     website: <Globe fill="#aaa" size={20} />,
@@ -44,11 +52,29 @@ function Works() {
             <ul className="work-links">
               {work.links.map(link => (
                 <li>
-                  <span className="before">{link.text}</span>
-                  <a href={link.url} target="_blank" rel="noopener noreferrer">
+                  <span
+                    className={
+                      hoverHint ? 'before show-hint' : 'before hide-hint'
+                    }
+                  >
+                    {link.text}
+                  </span>
+                  <a
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onMouseOver={showHoverHint}
+                    onMouseOut={hideHoverHint}
+                  >
                     {linkMaps[link.type]}
                   </a>
-                  <span className="after">{link.text}</span>
+                  <span
+                    className={
+                      hoverHint ? 'after show-hint' : 'after hide-hint'
+                    }
+                  >
+                    {link.text}
+                  </span>
                 </li>
               ))}
             </ul>

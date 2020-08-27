@@ -36,6 +36,7 @@
   background-color: #eee;
   border-radius: 50%;
   transition: 0.15s;
+  z-index: 1;
 }
 
 .work-links a:hover {
@@ -60,12 +61,29 @@
 }
 .work-card-container:nth-child(even) .before {
   right: 0.5em;
+  transition: 0.1s;
 }
 .work-card-container:nth-child(even) .after {
   display: none;
 }
 .work-card-container:nth-child(odd) .after {
   left: 0.5em;
+  transition: 0.2s;
+}
+
+.hide-hint {
+  opacity: 0;
+}
+.work-card-container:nth-child(even) .hide-hint {
+  transform: translateX(50%);
+}
+.work-card-container:nth-child(odd) .hide-hint {
+  transform: translateX(-50%);
+}
+
+.show-hint {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 .work-links > li {
