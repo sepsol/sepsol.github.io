@@ -35,11 +35,26 @@
       "Apollo",
       "SQL"
     ],
-    "link": {
-      "project": "",
-      "githubRepository": "",
-      "walkthroughVideo": ""
-    }
+    "links": [
+      {
+        "type": "website",
+        "text": "view the website",
+        "url": "",
+        "authorized": false
+      },
+      {
+        "type": "gitlab",
+        "text": "source code",
+        "url": "https://gitlab.com/karjoo-next",
+        "authorized": false
+      },
+      {
+        "type": "youtube",
+        "text": "watch walkthrough",
+        "url": "",
+        "authorized": false
+      }
+    ]
   },
   {
     "id": "6",
@@ -77,11 +92,26 @@
       "JSON Web Token",
       "BCrypt"
     ],
-    "link": {
-      "project": "",
-      "githubRepository": "",
-      "walkthroughVideo": ""
-    }
+    "links": [
+      {
+        "type": "apk",
+        "text": "download the app",
+        "url": "https://www.dropbox.com/s/n0zhq6b28gqp8r2/react-minimal-todo-by-sepsol.apk?dl=1",
+        "authorized": true
+      },
+      {
+        "type": "gitlab",
+        "text": "source code",
+        "url": "https://gitlab.com/sepsol/react-todo-app",
+        "authorized": true
+      },
+      {
+        "type": "youtube",
+        "text": "watch walkthrough",
+        "url": "",
+        "authorized": false
+      }
+    ]
   },
   {
     "id": "5",
@@ -113,11 +143,26 @@
       "Axios",
       "Yelp API"
     ],
-    "link": {
-      "project": "",
-      "githubRepository": "",
-      "walkthroughVideo": ""
-    }
+    "links": [
+      {
+        "type": "apk",
+        "text": "download the app",
+        "url": "https://www.dropbox.com/s/iwj1z9e8xvgrg1e/food-explore-by-sepsol.apk?dl=1",
+        "authorized": true
+      },
+      {
+        "type": "github",
+        "text": "source code",
+        "url": "https://github.com/sepsol/food-explore-app",
+        "authorized": true
+      },
+      {
+        "type": "youtube",
+        "text": "watch walkthrough",
+        "url": "",
+        "authorized": false
+      }
+    ]
   },
   {
     "id": "4",
@@ -142,11 +187,26 @@
       "screenshots": []
     },
     "techs": ["HTML", "CSS", "GitHub Pages"],
-    "link": {
-      "project": "",
-      "githubRepository": "",
-      "walkthroughVideo": ""
-    }
+    "links": [
+      {
+        "type": "website",
+        "text": "view the website",
+        "url": "https://sepsol.github.io/cosmo-junkie/",
+        "authorized": true
+      },
+      {
+        "type": "github",
+        "text": "source code",
+        "url": "https://github.com/sepsol/cosmo-junkie",
+        "authorized": true
+      },
+      {
+        "type": "youtube",
+        "text": "watch walkthrough",
+        "url": "",
+        "authorized": false
+      }
+    ]
   },
   {
     "id": "3",
@@ -171,11 +231,14 @@
       "screenshots": []
     },
     "techs": ["Microsoft PowerPoint", "Adobe Photoshop", "Adobe Illustrator"],
-    "link": {
-      "project": "",
-      "githubRepository": "",
-      "walkthroughVideo": ""
-    }
+    "links": [
+      {
+        "type": "youtube",
+        "text": "watch walkthrough",
+        "url": "",
+        "authorized": false
+      }
+    ]
   },
   {
     "id": "2",
@@ -200,11 +263,14 @@
       "screenshots": []
     },
     "techs": ["Autodesk Revit", "Unreal Engine"],
-    "link": {
-      "project": "",
-      "githubRepository": "",
-      "walkthroughVideo": ""
-    }
+    "links": [
+      {
+        "type": "youtube",
+        "text": "watch walkthrough",
+        "url": "",
+        "authorized": false
+      }
+    ]
   },
   {
     "id": "1",
@@ -229,10 +295,13 @@
       "screenshots": []
     },
     "techs": ["Microsoft PowerPoint", "Adobe Photoshop", "Adobe Illustrator"],
-    "link": {
-      "project": "",
-      "githubRepository": "",
-      "walkthroughVideo": ""
-    }
+    "links": [
+      {
+        "type": "youtube",
+        "text": "watch walkthrough",
+        "url": "",
+        "authorized": false
+      }
+    ]
   }
 ]
