@@ -17,30 +17,66 @@
 .work-links {
   list-style-type: none;
   padding: 0;
+  margin-top: 0.3em;
+  margin-bottom: 0;
   position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
 }
 
-.work-links > li {
-  top: 200px;
-  padding: 0.3em 0.3em 0;
+.work-links svg {
+  transition: 0.15s;
+}
+
+.work-links a {
+  display: inline-block;
+  padding: 0.4em 0.4em 0;
   margin-bottom: 0.8em;
   background-color: #eee;
   border-radius: 50%;
+  transition: 0.15s;
 }
 
-.work-links svg:hover {
-  fill: #333;
+.work-links a:hover {
+  background-color: #333;
+}
+
+.work-links a:hover svg {
+  fill: #eee;
 }
 
 .work-card-container:nth-child(odd) .work-links {
-  right: -3em;
+  right: -11em;
+  align-items: flex-start;
 }
 .work-card-container:nth-child(even) .work-links {
-  left: -3em;
+  left: -11em;
+  align-items: flex-end;
+}
+
+.work-card-container:nth-child(odd) .before {
+  display: none;
+}
+.work-card-container:nth-child(even) .before {
+  right: 0.5em;
+}
+.work-card-container:nth-child(even) .after {
+  display: none;
+}
+.work-card-container:nth-child(odd) .after {
+  left: 0.5em;
+}
+
+.work-links > li {
+  display: flex;
+  align-items: center;
+}
+
+.work-links span {
+  position: relative;
+  top: -0.5em;
+  color: #888;
 }
 
 .work-hero {

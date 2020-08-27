@@ -22,11 +22,11 @@ function Works() {
   const largeScreen = useMediaQuery('(min-width: 720px)');
 
   const linkMaps = {
-    website: <Globe fill="#aaa" size={24} />,
-    github: <GitHub fill="#aaa" size={24} />,
-    gitlab: <GitLab fill="#aaa" size={24} />,
-    apk: <Android fill="#aaa" size={24} />,
-    youtube: <YouTube fill="#aaa" size={24} />
+    website: <Globe fill="#aaa" size={20} />,
+    github: <GitHub fill="#aaa" size={20} />,
+    gitlab: <GitLab fill="#aaa" size={20} />,
+    apk: <Android fill="#aaa" size={20} />,
+    youtube: <YouTube fill="#aaa" size={20} />
   };
 
   return Data.map(work => (
@@ -44,9 +44,11 @@ function Works() {
             <ul className="work-links">
               {work.links.map(link => (
                 <li>
+                  <span className="before">{link.text}</span>
                   <a href={link.url} target="_blank" rel="noopener noreferrer">
                     {linkMaps[link.type]}
                   </a>
+                  <span className="after">{link.text}</span>
                 </li>
               ))}
             </ul>
