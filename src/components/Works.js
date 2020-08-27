@@ -21,6 +21,14 @@ import './Works.css';
 function Works() {
   const largeScreen = useMediaQuery('(min-width: 720px)');
 
+  const linkMaps = {
+    website: <Globe fill="#aaa" size={24} />,
+    github: <GitHub fill="#aaa" size={24} />,
+    gitlab: <GitLab fill="#aaa" size={24} />,
+    apk: <Android fill="#aaa" size={24} />,
+    youtube: <YouTube fill="#aaa" size={24} />
+  };
+
   return Data.map(work => (
     <div className="work-card-container">
       <ConditionalWrapper
@@ -36,27 +44,8 @@ function Works() {
             <ul className="work-links">
               {work.links.map(link => (
                 <li>
-                  <a
-                    href={link.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {
-                      switch (link.type) {
-                        case 'website':
-                          return <Globe />;
-                        case 'github':
-                          return <GitHub />;
-                        case 'gitlab':
-                          return <GitLab />;
-                        case 'apk':
-                          return <Android />;
-                        case 'youtube':
-                          return <YouTube />;
-                        default:
-                          break;
-                      }
-                    }
+                  <a href={link.url} target="_blank" rel="noopener noreferrer">
+                    {linkMaps[link.type]}
                   </a>
                 </li>
               ))}
