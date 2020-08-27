@@ -9,6 +9,13 @@ import { Picture } from 'react-responsive-picture';
 import Fade from 'react-reveal/Fade';
 import Data from '../database/works.json';
 
+import { VscGithub as GitHub, VscGlobe as Globe } from 'react-icons/vsc';
+import {
+  SiGitlab as GitLab,
+  SiAndroid as Android,
+  SiYoutube as YouTube
+} from 'react-icons/si';
+
 import './Works.css';
 
 function Works() {
@@ -25,6 +32,36 @@ function Works() {
         )}
       >
         <div className="work-card">
+          <div className="work-onhover">
+            <ul className="work-links">
+              {work.links.map(link => (
+                <li>
+                  <a
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {
+                      switch (link.type) {
+                        case 'website':
+                          return <Globe />;
+                        case 'github':
+                          return <GitHub />;
+                        case 'gitlab':
+                          return <GitLab />;
+                        case 'apk':
+                          return <Android />;
+                        case 'youtube':
+                          return <YouTube />;
+                        default:
+                          break;
+                      }
+                    }
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
           <div className="work-side">
             <h4 className="work-title">{work.title}</h4>
             <p className="work-description">{work.description.short}</p>
