@@ -153,7 +153,7 @@ function Main() {
         </section>
       </ConditionalWrapper>
 
-      <WIP />
+      {/* <WIP /> */}
     </main>
   );
 }
