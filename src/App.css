@@ -58,17 +58,19 @@ blockquote {
 footer {
   font-size: calc(0.8em + 0.08vw);
 }
-
+section {
+  margin: 0 auto;
+  padding: 30px 5vw;
+}
 @media screen and (min-width: 360px) {
   section {
-    margin: 0 auto;
-    padding: 30px 15vw;
+    padding: 30px 6vw;
   }
 }
 
 @media screen and (min-width: 480px) {
   section {
-    padding: 30px 20vw;
+    padding: 30px 7vw;
   }
   footer div br {
     display: none;
@@ -77,7 +79,7 @@ footer {
 
 @media screen and (min-width: 960px) {
   section {
-    padding: 30px 5vw;
+    padding: 30px 0;
     width: 840px;
   }
 }
