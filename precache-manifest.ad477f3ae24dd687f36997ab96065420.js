@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d20b37a8af2c4bb2f527a640ad1a7d99",
+    "revision": "f06678c9677a948e048dfd563d86d0d5",
     "url": "/index.html"
   },
   {
-    "revision": "bbf58131da7b785f70cb",
-    "url": "/static/css/main.4c1f9cd2.chunk.css"
+    "revision": "45b45410339379707102",
+    "url": "/static/css/main.b9b92a87.chunk.css"
   },
   {
     "revision": "5f0fb2447e8ee7af0dac",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.2ac7359a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bbf58131da7b785f70cb",
+    "revision": "45b45410339379707102",
     "url": "/static/js/main.43cede9b.chunk.js"
   },
   {
@@ -30,5 +30,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "cd379838291ecb813f82093cede7a11a",
     "url": "/static/media/coolvetica-rg.cd379838.ttf"
+  },
+  {
+    "revision": "2886b8e6ecfda4e9c04150db5d13634c",
+    "url": "/static/media/iconmonstr-arrow-34.2886b8e6.svg"
   }
 ]);
