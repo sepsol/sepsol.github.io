@@ -26,7 +26,9 @@ function SectionTitle({ children }) {
       {largeScreen ? (
         <a
           href={`#${titleToId()}`}
-          className={`hashtag ${hashtag ? 'show-hashtag' : 'hide-hashtag'}`}
+          className={`hashtag no-select ${
+            hashtag ? 'show-hashtag' : 'hide-hashtag'
+          }`}
         >
           #{' ‌'}
         </a>

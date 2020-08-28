@@ -123,11 +123,6 @@
   margin: 0.3em 0.25em;
 }
 
-.no-select {
-  -moz-user-select: none;
-  -webkit-user-select: none;
-}
-
 @media screen and (max-width: 1233px) {
   .work-card-container:nth-child(odd) .work-links {
     right: -5.5em;
@@ -154,6 +149,7 @@
 
 @media screen and (min-width: 720px) {
   .work-card-container {
+    position: relative;
     margin-bottom: 4em;
   }
   .work-card-container:nth-child(odd) > .work-card {
