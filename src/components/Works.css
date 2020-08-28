@@ -20,6 +20,7 @@
   margin-top: 0.3em;
   margin-bottom: 0;
   position: absolute;
+  top: -0.15em;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -48,11 +49,11 @@
 }
 
 .work-card-container:nth-child(odd) .work-links {
-  right: -9.5em;
+  right: -10em;
   align-items: flex-start;
 }
 .work-card-container:nth-child(even) .work-links {
-  left: -9.5em;
+  left: -10em;
   align-items: flex-end;
 }
 
