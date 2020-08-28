@@ -21,8 +21,12 @@ main {
   justify-content: space-around;
   background-color: var(--color-primary);
 }
+#home h1 {
+  color: #ddd;
+}
 #home h3 {
   font-weight: bold;
+  color: #ccc;
 }
 #home a {
   text-decoration: none;
