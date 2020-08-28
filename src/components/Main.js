@@ -8,7 +8,7 @@ import Fade from 'react-reveal/Fade';
 import Bounce from 'react-reveal/Bounce';
 
 import Works from './Works';
-import WIP from './WIP';
+// import WIP from './WIP';
 
 import './Main.css';
 
