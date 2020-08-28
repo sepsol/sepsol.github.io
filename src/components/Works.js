@@ -43,21 +43,21 @@ function Works() {
         )}
       >
         <div className="work-card">
-          <div className="work-onhover">
-            <ul className="work-links">
-              {work.links.map(link => (
-                <li>
-                  {largerThan1060 ? (
-                    <span
-                      className={`before no-select ${
-                        selectedLink === work.id + link.type + link.url
-                          ? 'show-hint'
-                          : 'hide-hint'
-                      }`}
-                    >
-                      {largerThan1234 ? link.text : link.type}
-                    </span>
-                  ) : null}
+          <ul className="work-links">
+            {work.links.map(link => (
+              <li>
+                {largerThan1060 ? (
+                  <span
+                    className={`before no-select ${
+                      selectedLink === work.id + link.type + link.url
+                        ? 'show-hint'
+                        : 'hide-hint'
+                    }`}
+                  >
+                    {largerThan1234 ? link.text : link.type}
+                  </span>
+                ) : null}
+                {link.authorized ? (
                   <a
                     href={link.url}
                     target="_blank"
@@ -69,21 +69,21 @@ function Works() {
                   >
                     {linkMaps[link.type]}
                   </a>
-                  {largerThan1060 ? (
-                    <span
-                      className={`after no-select ${
-                        selectedLink === work.id + link.type + link.url
-                          ? 'show-hint'
-                          : 'hide-hint'
-                      }`}
-                    >
-                      {largerThan1234 ? link.text : link.type}
-                    </span>
-                  ) : null}
-                </li>
-              ))}
-            </ul>
-          </div>
+                ) : null}
+                {largerThan1060 ? (
+                  <span
+                    className={`after no-select ${
+                      selectedLink === work.id + link.type + link.url
+                        ? 'show-hint'
+                        : 'hide-hint'
+                    }`}
+                  >
+                    {largerThan1234 ? link.text : link.type}
+                  </span>
+                ) : null}
+              </li>
+            ))}
+          </ul>
           <div className="work-side">
             <h4 className="work-title">{work.title}</h4>
             <p className="work-description">{work.description.short}</p>

@@ -128,21 +128,27 @@
   -webkit-user-select: none;
 }
 
-@media screen and (max-width: 1234px) {
+@media screen and (max-width: 1233px) {
   .work-card-container:nth-child(odd) .work-links {
-    right: -5em;
+    right: -5.5em;
   }
   .work-card-container:nth-child(even) .work-links {
-    left: -5em;
+    left: -5.5em;
   }
 }
 
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 1059px) {
   .work-card-container:nth-child(odd) .work-links {
-    right: -2em;
+    right: -2.6em;
   }
   .work-card-container:nth-child(even) .work-links {
-    left: -2em;
+    left: -2.6em;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .work-links {
+    display: none;
   }
 }
 
