@@ -96,6 +96,7 @@
   top: -0.5em;
   color: #666;
   font-size: calc(0.8em + 0.08vw);
+  z-index: -5;
 }
 
 .work-hero {
