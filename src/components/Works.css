@@ -162,10 +162,6 @@
 }
 
 @media screen and (min-width: 720px) {
-  .work-card-container {
-    position: relative;
-    margin-bottom: 4em;
-  }
   .work-card-container:nth-child(odd) > .work-card {
     flex-direction: row-reverse;
     /* flex-direction: row; */
@@ -173,6 +169,22 @@
   .work-card-container:nth-child(even) > .work-card {
     flex-direction: row;
     /* flex-direction: row-reverse; */
+  }
+  .work-card > picture {
+    width: 48%;
+  }
+  .work-side {
+    width: 48%;
+  }
+  .work-title {
+    margin-top: 0.1em;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .work-card-container {
+    position: relative;
+    margin-bottom: 4em;
   }
   .work-card > picture {
     width: 68%;
