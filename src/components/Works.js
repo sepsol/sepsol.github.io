@@ -43,49 +43,51 @@ function Works() {
         )}
       >
         <div className="work-card">
-          <ul className="work-links">
-            {work.links.map(link => (
-              <li>
-                {largerThan1060 ? (
-                  <span
-                    className={`before no-select ${
-                      selectedLink === work.id + link.type + link.url
-                        ? 'show-hint'
-                        : 'hide-hint'
-                    }`}
-                  >
-                    {largerThan1234 ? link.text : link.type}
-                  </span>
-                ) : null}
-                {link.authorized ? (
-                  <a
-                    href={link.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onMouseOver={() =>
-                      setSelectedLink(work.id + link.type + link.url)
-                    }
-                    onMouseOut={() => setSelectedLink(null)}
-                  >
-                    {linkMaps[link.type]}
-                  </a>
-                ) : null}
-                {largerThan1060 ? (
-                  <span
-                    className={`after no-select ${
-                      selectedLink === work.id + link.type + link.url
-                        ? 'show-hint'
-                        : 'hide-hint'
-                    }`}
-                  >
-                    {largerThan1234 ? link.text : link.type}
-                  </span>
-                ) : null}
-              </li>
-            ))}
-          </ul>
           <div className="work-side">
-            <h4 className="work-title">{work.title}</h4>
+            <div className="work-title-container">
+              <h4 className="work-title">{work.title}</h4>
+              <ul className="work-links">
+                {work.links.map(link => (
+                  <li>
+                    {largerThan1060 ? (
+                      <span
+                        className={`before no-select ${
+                          selectedLink === work.id + link.type + link.url
+                            ? 'show-hint'
+                            : 'hide-hint'
+                        }`}
+                      >
+                        {largerThan1234 ? link.text : link.type}
+                      </span>
+                    ) : null}
+                    {link.authorized ? (
+                      <a
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onMouseOver={() =>
+                          setSelectedLink(work.id + link.type + link.url)
+                        }
+                        onMouseOut={() => setSelectedLink(null)}
+                      >
+                        {linkMaps[link.type]}
+                      </a>
+                    ) : null}
+                    {largerThan1060 ? (
+                      <span
+                        className={`after no-select ${
+                          selectedLink === work.id + link.type + link.url
+                            ? 'show-hint'
+                            : 'hide-hint'
+                        }`}
+                      >
+                        {largerThan1234 ? link.text : link.type}
+                      </span>
+                    ) : null}
+                  </li>
+                ))}
+              </ul>
+            </div>
             <p className="work-description">{work.description.short}</p>
             <ul className="work-techs">
               {work.techs.map(tech => (

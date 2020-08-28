@@ -30,7 +30,7 @@
 }
 
 .work-links a {
-  display: inline-block;
+  display: block;
   padding: 0.4em 0.4em 0;
   margin-bottom: 0.8em;
   background-color: #eee;
@@ -142,8 +142,21 @@
 }
 
 @media screen and (max-width: 960px) {
+  .work-title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   .work-links {
-    display: none;
+    /* display: none; */
+    margin: 0;
+    position: initial;
+    flex-direction: row;
+    justify-items: flex-end;
+  }
+  .work-links a {
+    margin: 0 0.3em 0.5em 0.5em;
+    transform: scale(1.05);
   }
 }
 
