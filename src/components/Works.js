@@ -19,8 +19,10 @@ import {
 import './Works.css';
 
 function Works() {
-  const largeScreen = useMediaQuery('(min-width: 720px)');
   const [selectedLink, setSelectedLink] = useState(null);
+  const largerThan1234 = useMediaQuery('(min-width: 1234px)');
+  const largerThan1060 = useMediaQuery('(min-width: 1060px)');
+  const largerThan720 = useMediaQuery('(min-width: 720px)');
 
   const linkMaps = {
     website: <Globe fill="#aaa" size={20} />,
@@ -33,7 +35,7 @@ function Works() {
   return Data.map(work => (
     <div className="work-card-container">
       <ConditionalWrapper
-        condition={largeScreen}
+        condition={largerThan720}
         wrapper={children => (
           <Fade bottom fraction={0.05} distance="70px">
             {children}
@@ -45,15 +47,17 @@ function Works() {
             <ul className="work-links">
               {work.links.map(link => (
                 <li>
-                  <span
-                    className={`before no-select ${
-                      selectedLink === work.id + link.type + link.url
-                        ? 'show-hint'
-                        : 'hide-hint'
-                    }`}
-                  >
-                    {link.text}
-                  </span>
+                  {largerThan1060 ? (
+                    <span
+                      className={`before no-select ${
+                        selectedLink === work.id + link.type + link.url
+                          ? 'show-hint'
+                          : 'hide-hint'
+                      }`}
+                    >
+                      {largerThan1234 ? link.text : link.type}
+                    </span>
+                  ) : null}
                   <a
                     href={link.url}
                     target="_blank"
@@ -65,15 +69,17 @@ function Works() {
                   >
                     {linkMaps[link.type]}
                   </a>
-                  <span
-                    className={`after no-select ${
-                      selectedLink === work.id + link.type + link.url
-                        ? 'show-hint'
-                        : 'hide-hint'
-                    }`}
-                  >
-                    {link.text}
-                  </span>
+                  {largerThan1060 ? (
+                    <span
+                      className={`after no-select ${
+                        selectedLink === work.id + link.type + link.url
+                          ? 'show-hint'
+                          : 'hide-hint'
+                      }`}
+                    >
+                      {largerThan1234 ? link.text : link.type}
+                    </span>
+                  ) : null}
                 </li>
               ))}
             </ul>

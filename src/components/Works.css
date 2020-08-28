@@ -128,6 +128,24 @@
   -webkit-user-select: none;
 }
 
+@media screen and (max-width: 1234px) {
+  .work-card-container:nth-child(odd) .work-links {
+    right: -5em;
+  }
+  .work-card-container:nth-child(even) .work-links {
+    left: -5em;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .work-card-container:nth-child(odd) .work-links {
+    right: -2em;
+  }
+  .work-card-container:nth-child(even) .work-links {
+    left: -2em;
+  }
+}
+
 @media screen and (min-width: 720px) {
   .work-card-container {
     margin-bottom: 4em;
