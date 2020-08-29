@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.b1e29ffe.chunk.css",
+    "main.css": "/static/css/main.aaf4409c.chunk.css",
     "main.js": "/static/js/main.43cede9b.chunk.js",
     "main.js.map": "/static/js/main.43cede9b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.9c75deed.js",
@@ -8,9 +8,9 @@
     "static/js/2.2ac7359a.chunk.js": "/static/js/2.2ac7359a.chunk.js",
     "static/js/2.2ac7359a.chunk.js.map": "/static/js/2.2ac7359a.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.4f2cc91d3275ec958640e5b508ba226d.js": "/precache-manifest.4f2cc91d3275ec958640e5b508ba226d.js",
+    "precache-manifest.d11f4be33ba4db87a16cb66d8681a4a3.js": "/precache-manifest.d11f4be33ba4db87a16cb66d8681a4a3.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.b1e29ffe.chunk.css.map": "/static/css/main.b1e29ffe.chunk.css.map",
+    "static/css/main.aaf4409c.chunk.css.map": "/static/css/main.aaf4409c.chunk.css.map",
     "static/js/2.2ac7359a.chunk.js.LICENSE.txt": "/static/js/2.2ac7359a.chunk.js.LICENSE.txt",
     "static/media/App.css": "/static/media/coolvetica-rg.cd379838.ttf",
     "static/media/Main.css": "/static/media/iconmonstr-arrow-34.2886b8e6.svg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.9c75deed.js",
     "static/js/2.2ac7359a.chunk.js",
-    "static/css/main.b1e29ffe.chunk.css",
+    "static/css/main.aaf4409c.chunk.css",
     "static/js/main.43cede9b.chunk.js"
   ]
 }
