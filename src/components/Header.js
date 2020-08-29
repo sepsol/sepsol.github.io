@@ -24,8 +24,8 @@ function Header() {
     setToggled(false);
   }
   function goToWork() {
-    const work = document.getElementById('work');
-    work.scrollIntoView({ block: 'start', behavior: 'smooth' });
+    const works = document.getElementById('works');
+    works.scrollIntoView({ block: 'start', behavior: 'smooth' });
     setToggled(false);
   }
 
