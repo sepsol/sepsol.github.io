@@ -13,7 +13,7 @@ import Works from './Works';
 import './Main.css';
 
 function Main() {
-  const largeScreen = useMediaQuery('(min-width: 720px)');
+  const largeScreen = useMediaQuery('(min-width: 800px)');
 
   return (
     <main>
