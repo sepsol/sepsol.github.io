@@ -8,7 +8,7 @@ main {
   section#home {
     height: 100vh;
     width: 100%;
-    padding: 15vh 5vw 30vh;
+    // padding: 15vh 5vw 30vh !important;
     /* max-width: 1440px; */
     margin: 0 auto;
     box-sizing: border-box;
@@ -92,36 +92,36 @@ main {
 
 @media screen and (min-width: 400px) {
   section#home {
-    padding: 20vh 10vw 25vh;
+    padding: 20vh 10vw 25vh !important;
   }
 }
 
 @media screen and (min-width: 500px) {
   section#home {
-    padding: 17vh 15vw 22vh;
+    padding: 17vh 15vw 22vh !important;
   }
 }
 
 @media screen and (min-width: 750px) {
   section#home {
-    padding: 17vh 20vw 20vh;
+    padding: 17vh 20vw 20vh !important;
   }
 }
 
 @media screen and (min-width: 1000px) {
   section#home {
-    padding: 15vh 25vw 17vh;
+    padding: 15vh 25vw 17vh !important;
   }
 }
 
 @media screen and (min-width: 1800px) {
   section#home {
-    padding: 15vh 28vw 15vh;
+    padding: 15vh 28vw 15vh !important;
   }
 }
 
 @media screen and (min-width: 2500px) {
   section#home {
-    padding: 20vh 35vw;
+    padding: 20vh 35vw !important;
   }
 }

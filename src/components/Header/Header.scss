@@ -104,13 +104,13 @@ header.nav-wrapper {
 
 @media screen and (max-width: 750px) {
   .nav-links {
-    width: 50vw;
+    width: 50vw !important;
   }
 }
 
 @media screen and (max-width: 580px) {
   .nav-links {
-    width: 60vw;
+    width: 60vw !important;
   }
 }
 
@@ -127,7 +127,7 @@ header.nav-wrapper {
         background-color: var(--color-primary);
         flex-direction: column;
         max-width: none;
-        width: 100vw;
+        width: 100vw !important;
         top: calc(1.08em - 0.05vw + 0.5em + 0.3em);
         left: 0;
         padding: 2em;
