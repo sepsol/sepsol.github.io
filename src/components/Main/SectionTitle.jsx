@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useMediaQuery } from 'beautiful-react-hooks';
-import './SectionTitle.css';
+
+import './SectionTitle.scss';
 
 function SectionTitle({ children }) {
   const largeScreen = useMediaQuery('(min-width: 720px)');

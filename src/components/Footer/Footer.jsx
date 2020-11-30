@@ -1,5 +1,4 @@
 import React from 'react';
-import './Footer.css';
 
 import {
   Github,
@@ -7,8 +6,10 @@ import {
   DevDotTo,
   Linkedin,
   Twitter,
-  Instagram
+  Instagram,
 } from '@icons-pack/react-simple-icons';
+
+import './Footer.scss';
 
 function Footer() {
   return (

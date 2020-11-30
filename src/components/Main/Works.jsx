@@ -1,22 +1,22 @@
 import React, { useState } from 'react';
 
 import { useMediaQuery } from 'beautiful-react-hooks';
-import ConditionalWrapper from './ConditionalWrapper';
+import ConditionalWrapper from '../Helpers/ConditionalWrapper';
 
 import { LazyLoadComponent } from 'react-lazy-load-image-component';
 import { Picture } from 'react-responsive-picture';
 
 import Fade from 'react-reveal/Fade';
-import Data from '../database/works.json';
+import Data from '../../database/works.json';
 
 import { VscGithub as GitHub, VscGlobe as Globe } from 'react-icons/vsc';
 import {
   SiGitlab as GitLab,
   SiAndroid as Android,
-  SiYoutube as YouTube
+  SiYoutube as YouTube,
 } from 'react-icons/si';
 
-import './Works.css';
+import './Works.scss';
 
 function Works() {
   const [selectedLink, setSelectedLink] = useState(null);
@@ -29,7 +29,7 @@ function Works() {
     github: <GitHub fill="#aaa" size={20} />,
     gitlab: <GitLab fill="#aaa" size={20} />,
     apk: <Android fill="#aaa" size={20} />,
-    youtube: <YouTube fill="#aaa" size={20} />
+    youtube: <YouTube fill="#aaa" size={20} />,
   };
 
   return Data.map(work => (
@@ -104,21 +104,21 @@ function Works() {
                 {
                   srcSet: work.img.hero.mobile.webp,
                   media: '(max-width: 480px)',
-                  type: 'image/webp'
+                  type: 'image/webp',
                 },
                 {
                   srcSet: work.img.hero.mobile.png,
                   media: '(max-width: 480px)',
-                  type: 'image/png'
+                  type: 'image/png',
                 },
                 {
                   srcSet: work.img.hero.desktop.webp,
-                  type: 'image/webp'
+                  type: 'image/webp',
                 },
                 {
                   srcSet: work.img.hero.desktop.png,
-                  type: 'image/png'
-                }
+                  type: 'image/png',
+                },
               ]}
             />
           </LazyLoadComponent>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Hamburger from './Hamburger';
-import './Header.css';
+
+import './Header.scss';
 
 function Header() {
   const [toggled, setToggled] = useState(false);

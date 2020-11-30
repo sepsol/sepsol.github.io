@@ -26,18 +26,18 @@ const styles = {
   desktop: {
     display: 'block',
     margin: '0 auto',
-    width: '30%'
+    width: '30%',
   },
   tablet: {
     display: 'block',
     margin: '0 auto',
-    width: '50%'
+    width: '50%',
   },
   mobile: {
     display: 'block',
     margin: '0 auto',
-    width: '70%'
-  }
+    width: '70%',
+  },
 };
 
 export default WIP;

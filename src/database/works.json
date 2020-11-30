@@ -186,7 +186,11 @@
       },
       "screenshots": []
     },
-    "techs": ["HTML", "CSS", "GitHub Pages"],
+    "techs": [
+      "HTML",
+      "CSS",
+      "GitHub Pages"
+    ],
     "links": [
       {
         "type": "website",
@@ -230,7 +234,11 @@
       },
       "screenshots": []
     },
-    "techs": ["Microsoft PowerPoint", "Adobe Photoshop", "Adobe Illustrator"],
+    "techs": [
+      "Microsoft PowerPoint",
+      "Adobe Photoshop",
+      "Adobe Illustrator"
+    ],
     "links": [
       {
         "type": "youtube",
@@ -262,7 +270,10 @@
       },
       "screenshots": []
     },
-    "techs": ["Autodesk Revit", "Unreal Engine"],
+    "techs": [
+      "Autodesk Revit",
+      "Unreal Engine"
+    ],
     "links": [
       {
         "type": "youtube",
@@ -294,7 +305,11 @@
       },
       "screenshots": []
     },
-    "techs": ["Microsoft PowerPoint", "Adobe Photoshop", "Adobe Illustrator"],
+    "techs": [
+      "Microsoft PowerPoint",
+      "Adobe Photoshop",
+      "Adobe Illustrator"
+    ],
     "links": [
       {
         "type": "youtube",

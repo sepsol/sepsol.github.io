@@ -1,7 +1,7 @@
 import React from 'react';
 import { useMediaQuery } from 'beautiful-react-hooks';
 
-import ConditionalWrapper from './ConditionalWrapper';
+import ConditionalWrapper from '../Helpers/ConditionalWrapper';
 import SectionTitle from './SectionTitle';
 
 import Fade from 'react-reveal/Fade';
@@ -10,7 +10,7 @@ import Bounce from 'react-reveal/Bounce';
 import Works from './Works';
 // import WIP from './WIP';
 
-import './Main.css';
+import './Main.scss';
 
 function Main() {
   const largeScreen = useMediaQuery('(min-width: 800px)');
