@@ -44,6 +44,24 @@
   "devDependencies": {
     "cross-env": "^7.0.2",
     "gh-pages": "^3.1.0",
+    "prettier": "2.2.1",
     "react-lazy-load-image-component": "^1.5.0"
+  },
+  "prettier": {
+    "arrowParens": "avoid",
+    "bracketSpacing": true,
+    "htmlWhitespaceSensitivity": "css",
+    "insertPragma": false,
+    "jsxBracketSameLine": false,
+    "jsxSingleQuote": false,
+    "printWidth": 80,
+    "proseWrap": "preserve",
+    "quoteProps": "as-needed",
+    "requirePragma": false,
+    "semi": true,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "all",
+    "useTabs": false
   }
 }
