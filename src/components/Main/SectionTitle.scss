@@ -3,20 +3,20 @@
   flex-direction: row;
   align-items: center;
   position: relative;
-}
-.hashtag {
-  position: absolute;
-  left: -0.7em;
-  text-decoration: none;
-  color: #bbb;
-  transition: 0.15s;
-}
-.hashtag:hover {
-  color: #555;
-}
-.show-hashtag {
-  opacity: 1;
-}
-.hide-hashtag {
-  opacity: 0;
+  .hashtag {
+    position: absolute;
+    left: -0.7em;
+    text-decoration: none;
+    color: #bbb;
+    transition: 0.15s;
+    &:hover {
+      color: #555;
+    }
+  }
+  .show-hashtag {
+    opacity: 1;
+  }
+  .hide-hashtag {
+    opacity: 0;
+  }
 }

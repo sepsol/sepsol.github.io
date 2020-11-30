@@ -33,7 +33,7 @@ function Works() {
   };
 
   return Data.map(work => (
-    <div className="work-card-container">
+    <div className="work-card-wrapper">
       <ConditionalWrapper
         condition={largerThan800}
         wrapper={children => (
@@ -44,7 +44,7 @@ function Works() {
       >
         <div className="work-card">
           <div className="work-side">
-            <div className="work-title-container">
+            <div className="work-title-wrapper">
               <h4 className="work-title">{work.title}</h4>
               <ul className="work-links">
                 {work.links.map(link => (

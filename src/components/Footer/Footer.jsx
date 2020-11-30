@@ -17,7 +17,7 @@ function Footer() {
       <ul>
         <li>
           <a
-            class="social github"
+            className="social github-icon"
             target="_blank"
             rel="noopener noreferrer"
             href="https://github.com/sepsol"
@@ -27,7 +27,7 @@ function Footer() {
         </li>
         <li>
           <a
-            class="social gitlab"
+            className="social gitlab-icon"
             target="_blank"
             rel="noopener noreferrer"
             href="https://gitlab.com/sepsol"
@@ -37,7 +37,7 @@ function Footer() {
         </li>
         <li>
           <a
-            class="social dev"
+            className="social dev-icon"
             target="_blank"
             rel="noopener noreferrer"
             href="https://dev.to/sepsol"
@@ -47,7 +47,7 @@ function Footer() {
         </li>
         <li>
           <a
-            class="social linkedin"
+            className="social linkedin-icon"
             target="_blank"
             rel="noopener noreferrer"
             href="https://www.linkedin.com/in/sepsol/"
@@ -57,7 +57,7 @@ function Footer() {
         </li>
         <li>
           <a
-            class="social twitter"
+            className="social twitter-icon"
             target="_blank"
             rel="noopener noreferrer"
             href="https://twitter.com/mr_sepsol"
@@ -67,7 +67,7 @@ function Footer() {
         </li>
         <li>
           <a
-            class="social instagram"
+            className="social instagram-icon"
             target="_blank"
             rel="noopener noreferrer"
             href="https://www.instagram.com/mr_sepsol/"
@@ -76,7 +76,7 @@ function Footer() {
           </a>
         </li>
       </ul>
-      <div>
+      <div className="copyright">
         Designed and built by
         <br /> Sepehr Soltanieh
       </div>

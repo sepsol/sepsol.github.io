@@ -8,7 +8,7 @@ function WIP() {
   return (
     <section id="wip">
       <img
-        src={require('../assets/gif/working-on-it.gif')}
+        src={require('../../assets/gif/working-on-it.gif')}
         alt="work in progress gif"
         style={
           desktopScreen

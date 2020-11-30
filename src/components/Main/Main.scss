@@ -1,117 +1,127 @@
 main {
   padding: 0;
   margin: 0;
-}
-/* main section {
-  padding: 30px 0;
-} */
+  // section {
+  //   padding: 30px 0;
+  // }
 
-#home {
-  height: 100vh;
-  width: 100%;
-  padding: 15vh 5vw 30vh;
-  /* max-width: 1440px; */
-  margin: 0 auto;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  background-color: var(--color-primary);
-  transition: 0.2s;
+  section#home {
+    height: 100vh;
+    width: 100%;
+    padding: 15vh 5vw 30vh;
+    /* max-width: 1440px; */
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--color-primary);
+    transition: 0.2s;
+    h1 {
+      color: #ddd;
+    }
+    h3 {
+      font-weight: bold;
+      color: #ccc;
+    }
+    a {
+      text-decoration: none;
+      /* color: var(--color-primary); */
+      color: #ccc;
+      transition: 0.1s;
+      &:hover {
+        /* border-bottom: 3px solid var(--color-primary); */
+        border-bottom: 3px solid #bbb;
+      }
+    }
+  }
+
+  section#about {
+    blockquote {
+      background-color: #f9f9f9;
+      border-left: 10px solid #ccc;
+      margin: 2.5em 0 3em;
+      padding: 0.8em 1em;
+      &::before {
+        color: #ccc;
+        content: open-quote;
+        font-size: 4em;
+        line-height: 0.1em;
+        margin-right: 0.25em;
+        vertical-align: -0.4em;
+      }
+      footer {
+        color: #a9a9a9;
+        margin-top: 0.5em;
+        text-align: right;
+        font-style: normal;
+        font-weight: bold;
+        &::before {
+          content: '\2015';
+        }
+      }
+    }
+  }
+
+  section#skills {
+    ul {
+      /* list-style: none; */
+      list-style-image: url('../../assets/icons/iconmonstr-arrow-34.svg');
+      // li {
+      //   &::before {
+      //     content: '\25B6';
+      //     color: var(--color-primary);
+      //     font-weight: bold;
+      //     display: inline-block;
+      //     width: 1.5em;
+      //     margin-left: -1em;
+      //   }
+      // }
+      footer {
+        color: #888;
+        margin-top: 1em;
+        &::before {
+          content: '* ';
+        }
+      }
+    }
+  }
 }
-#home h1 {
-  color: #ddd;
-}
-#home h3 {
-  font-weight: bold;
-  color: #ccc;
-}
-#home a {
-  text-decoration: none;
-  /* color: var(--color-primary); */
-  color: #ccc;
-  transition: 0.1s;
-}
-#home a:hover {
-  /* border-bottom: 3px solid var(--color-primary); */
-  border-bottom: 3px solid #bbb;
-}
-#about blockquote {
-  background-color: #f9f9f9;
-  border-left: 10px solid #ccc;
-  margin: 2.5em 0 3em;
-  padding: 0.8em 1em;
-}
-#about blockquote::before {
-  color: #ccc;
-  content: open-quote;
-  font-size: 4em;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
-}
-#about blockquote footer {
-  color: #a9a9a9;
-  margin-top: 0.5em;
-  text-align: right;
-  font-style: normal;
-  font-weight: bold;
-}
-#about blockquote footer::before {
-  content: '\2015';
-}
-#skills ul {
-  /* list-style: none; */
-  list-style-image: url('../../assets/icons/iconmonstr-arrow-34.svg');
-}
-/* #skills ul li::before {
-  content: "\25B6";
-  color: var(--color-primary);
-  font-weight: bold;
-  display: inline-block;
-  width: 1.5em;
-  margin-left: -1em;
-} */
-#skills footer {
-  color: #888;
-  margin-top: 1em;
-}
-#skills footer::before {
-  content: '* ';
-}
+
+// MEDIA QUERIES:
 
 @media screen and (min-width: 400px) {
-  #home {
+  section#home {
     padding: 20vh 10vw 25vh;
   }
 }
 
 @media screen and (min-width: 500px) {
-  #home {
+  section#home {
     padding: 17vh 15vw 22vh;
   }
 }
 
 @media screen and (min-width: 750px) {
-  #home {
+  section#home {
     padding: 17vh 20vw 20vh;
   }
 }
 
 @media screen and (min-width: 1000px) {
-  #home {
+  section#home {
     padding: 15vh 25vw 17vh;
   }
 }
 
 @media screen and (min-width: 1800px) {
-  #home {
+  section#home {
     padding: 15vh 28vw 15vh;
   }
 }
 
 @media screen and (min-width: 2500px) {
-  #home {
+  section#home {
     padding: 20vh 35vw;
   }
 }

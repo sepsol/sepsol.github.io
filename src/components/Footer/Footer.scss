@@ -4,30 +4,32 @@ footer#footer {
   flex-direction: column;
   align-items: center;
   transition: 0.1s;
-}
-footer#footer ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
-footer#footer ul li {
-  padding-left: 8px;
-  padding-right: 8px;
-}
-footer#footer ul li a svg {
-  transition: 0.1s;
-}
-footer#footer ul li a svg:hover {
-  fill: var(--color-primary);
-}
-footer#footer div {
-  margin-top: 10px;
-  text-align: center;
-}
-footer#footer ul li .dev {
-  position: relative;
-  bottom: 4px;
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    li {
+      padding-left: 8px;
+      padding-right: 8px;
+      a.social {
+        svg {
+          transition: 0.1s;
+          &:hover {
+            fill: var(--color-primary);
+          }
+        }
+      }
+      .dev-icon {
+        position: relative;
+        bottom: 4px;
+      }
+    }
+  }
+  .copyright {
+    margin-top: 10px;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 800px) {

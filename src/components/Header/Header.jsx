@@ -31,10 +31,10 @@ function Header() {
   }
 
   return (
-    <header className="top-bar">
-      <nav className="container no-select">
-        <div className="nav-top">
-          <button onClick={goToTop} className="site-logo">
+    <header className="nav-wrapper">
+      <nav className="nav no-select">
+        <div className="nav-bar">
+          <button onClick={goToTop} className="nav-title">
             SEPSOL
           </button>
           <Hamburger onClick={handleToggle} toggled={toggled} />
@@ -54,7 +54,7 @@ function Header() {
               href="https://app.box.com/s/73tauyvan7s4hg3l5g0vmi79zb4sbndz"
               target="_blank"
               rel="noopener noreferrer"
-              className="resume"
+              className="resume-link"
             >
               Resume
             </a>
