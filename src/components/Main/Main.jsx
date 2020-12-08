@@ -7,6 +7,7 @@ import SectionTitle from './SectionTitle';
 import Fade from 'react-reveal/Fade';
 import Bounce from 'react-reveal/Bounce';
 
+import Skills from './Skills'
 import Works from './Works';
 // import WIP from './WIP';
 
@@ -113,29 +114,7 @@ function Main() {
       >
         <section id="skills">
           <SectionTitle>Skills</SectionTitle>
-          <p>
-            I'm always working hard to expand my skill-set. Here are a few
-            technologies I've been working with recently*:
-          </p>
-          <ul>
-            <li>JavaScript (ES6) / TypeScript</li>
-            <li>React.js / React Native</li>
-            <li>Node.js</li>
-            <li>Express.js / REST-ful APIs</li>
-            <li>GraphQL / Apollo</li>
-            <li>HTML & (S)CSS</li>
-            <li>MongoDB / No-SQL</li>
-            <li>MySQL / SQL</li>
-            <li>WordPress</li>
-          </ul>
-          <footer>
-            Other technologies I've worked with include but are not limited to
-            Git / Bash / Chrome DevTools / Postman / Netlify / Heroku / Ngrok /
-            Nodemon / Shopify Polaris / Formik / Yup / Fonk and outside the
-            world of programming I've worked with Adobe Creative Cloud /
-            Microsoft Office / Trimble SketchUp / McNeel Rhinoceros / Autodesk
-            Products
-          </footer>
+          <Skills />
         </section>
       </ConditionalWrapper>
 

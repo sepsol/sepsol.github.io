@@ -1,0 +1,23 @@
+section#skills {
+  ul {
+    /* list-style: none; */
+    list-style-image: url('../../assets/icons/iconmonstr-arrow-34.svg');
+    // li {
+    //   &::before {
+    //     content: '\25B6';
+    //     color: var(--color-primary);
+    //     font-weight: bold;
+    //     display: inline-block;
+    //     width: 1.5em;
+    //     margin-left: -1em;
+    //   }
+    // }
+    footer {
+      color: #888;
+      margin-top: 1em;
+      &::before {
+        content: '* ';
+      }
+    }
+  }
+}
