@@ -62,6 +62,34 @@ function Main() {
           </Fade>
         )}
       >
+        <section id="skills">
+          <SectionTitle>Skills</SectionTitle>
+          <Skills />
+        </section>
+      </ConditionalWrapper>
+
+      <ConditionalWrapper
+        condition={largeScreen}
+        wrapper={children => (
+          <Fade bottom fraction={0.05} distance="50px">
+            {children}
+          </Fade>
+        )}
+      >
+        <section id="works">
+          <SectionTitle>Works</SectionTitle>
+          <Works />
+        </section>
+      </ConditionalWrapper>
+
+      <ConditionalWrapper
+        condition={largeScreen}
+        wrapper={children => (
+          <Fade bottom fraction={0.2} distance="50px">
+            {children}
+          </Fade>
+        )}
+      >
         <section id="about">
           <SectionTitle>About</SectionTitle>
           <p>
@@ -101,34 +129,6 @@ function Main() {
             knowledge, play with the UI/UX of other apps and try to come up with
             my twist on their concept, or sometimes play video games :)
           </p>
-        </section>
-      </ConditionalWrapper>
-
-      <ConditionalWrapper
-        condition={largeScreen}
-        wrapper={children => (
-          <Fade bottom fraction={0.2} distance="50px">
-            {children}
-          </Fade>
-        )}
-      >
-        <section id="skills">
-          <SectionTitle>Skills</SectionTitle>
-          <Skills />
-        </section>
-      </ConditionalWrapper>
-
-      <ConditionalWrapper
-        condition={largeScreen}
-        wrapper={children => (
-          <Fade bottom fraction={0.05} distance="50px">
-            {children}
-          </Fade>
-        )}
-      >
-        <section id="works">
-          <SectionTitle>Works</SectionTitle>
-          <Works />
         </section>
       </ConditionalWrapper>
 
