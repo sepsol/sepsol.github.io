@@ -41,10 +41,10 @@ function Header() {
         </div>
         <ul className={toggled ? 'nav-links nav-links-active' : 'nav-links'}>
           <li>
-            <button onClick={goToSkills}>Skills</button>
+            <button onClick={goToWork}>Works</button>
           </li>
           <li>
-            <button onClick={goToWork}>Works</button>
+            <button onClick={goToSkills}>Skills</button>
           </li>
           <li>
             <button onClick={goToAbout}>About</button>

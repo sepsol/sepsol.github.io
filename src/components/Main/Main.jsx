@@ -54,19 +54,7 @@ function Main() {
         </ConditionalWrapper>
       </section>
 
-      <ConditionalWrapper
-        condition={largeScreen}
-        wrapper={children => (
-          <Fade bottom fraction={0.2} distance="50px">
-            {children}
-          </Fade>
-        )}
-      >
-        <section id="skills">
-          <SectionTitle>Skills</SectionTitle>
-          <Skills />
-        </section>
-      </ConditionalWrapper>
+      
 
       <ConditionalWrapper
         condition={largeScreen}
@@ -79,6 +67,20 @@ function Main() {
         <section id="works">
           <SectionTitle>Works</SectionTitle>
           <Works />
+        </section>
+      </ConditionalWrapper>
+
+      <ConditionalWrapper
+        condition={largeScreen}
+        wrapper={children => (
+          <Fade bottom fraction={0.2} distance="50px">
+            {children}
+          </Fade>
+        )}
+      >
+        <section id="skills">
+          <SectionTitle>Skills</SectionTitle>
+          <Skills />
         </section>
       </ConditionalWrapper>
 
