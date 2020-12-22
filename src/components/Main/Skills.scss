@@ -14,22 +14,33 @@ section#skills {
       //   margin-left: -1em;
       // }
       font-weight: 300;
-      font-size: calc(0.8em + 0.08vw);
+      font-size: calc(0.8em + 0.075vw);
       color: #333;
     }
     
   }
   .skills-subsection-wrapper {
     width: 100%;
-    display: flex;
-    .skills-subsection {
-      flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.1em;
+    // .skills-subsection {
+    //   flex: 1;
+    // }
+    @media screen and (max-width: 640px) {
+      padding-left: 5%;
+      gap: 0.3em;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width: 400px) {
+      padding-left: 0;
+      gap: 0.2em;
     }
   }
   footer {
     padding-top: 1.5em;
     color: #888;
-    margin-top: 1em;
+    margin-top: 0.8em;
     &::before {
       content: '* ';
     }
