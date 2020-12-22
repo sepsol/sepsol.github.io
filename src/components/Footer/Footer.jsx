@@ -77,7 +77,7 @@ function Footer() {
         </li>
       </ul>
       <div className="copyright">
-        Designed and built by
+        Designed and developed by
         <br /> Sepehr Soltanieh
       </div>
     </footer>
