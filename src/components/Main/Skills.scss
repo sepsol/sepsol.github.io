@@ -2,22 +2,36 @@ section#skills {
   ul {
     /* list-style: none; */
     list-style-image: url('../../assets/icons/iconmonstr-arrow-34.svg');
-    // li {
-    //   &::before {
-    //     content: '\25B6';
-    //     color: var(--color-primary);
-    //     font-weight: bold;
-    //     display: inline-block;
-    //     width: 1.5em;
-    //     margin-left: -1em;
-    //   }
-    // }
-    footer {
-      color: #888;
-      margin-top: 1em;
-      &::before {
-        content: '* ';
-      }
+    padding-left: 1.5em;
+
+    li {
+      // &::before {
+      //   content: '\25B6';
+      //   color: var(--color-primary);
+      //   font-weight: bold;
+      //   display: inline-block;
+      //   width: 1.5em;
+      //   margin-left: -1em;
+      // }
+      font-weight: 300;
+      font-size: calc(0.8em + 0.08vw);
+      color: #333;
+    }
+    
+  }
+  .skills-subsection-wrapper {
+    width: 100%;
+    display: flex;
+    .skills-subsection {
+      flex: 1;
+    }
+  }
+  footer {
+    padding-top: 1.5em;
+    color: #888;
+    margin-top: 1em;
+    &::before {
+      content: '* ';
     }
   }
 }
