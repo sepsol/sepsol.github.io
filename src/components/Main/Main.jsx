@@ -38,7 +38,7 @@ function Main() {
           condition={largeScreen}
           wrapper={children => <Fade>{children}</Fade>}
         >
-          <h3>
+          <h5>
             Get in touch{' '}
             <span role="img" aria-label="hand emoji pointing to the right">
               👉
@@ -50,7 +50,7 @@ function Main() {
             >
               sepsol.works@gmail.com
             </a>
-          </h3>
+          </h5>
         </ConditionalWrapper>
       </section>
 
