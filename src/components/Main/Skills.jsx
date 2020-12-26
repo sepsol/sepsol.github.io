@@ -64,7 +64,7 @@ function Skills() {
       </div>
       <footer>
         Other technologies I've worked with include but are not limited to 
-        Material UI, Rsuit, react-sortable-hoc, react-virtualized, 
+        Material UI, RSuit, React Sortable HOC, React Virtualized, 
         Fonk, Yup, Formik, Ngrok, and Nodemon. 
         Outside the world of programming I've worked with  
         Photoshop, Illustrator, InDesign, and XD from Adobe Creative Cloud,
