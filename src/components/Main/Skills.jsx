@@ -64,10 +64,11 @@ function Skills() {
       </div>
       <footer>
         Other technologies I've worked with include but are not limited to 
-        Ngrok, Nodemon, Formik, Yup, and Fonk. 
+        Material UI, Rsuit, react-sortable-hoc, react-virtualized, 
+        Fonk, Yup, Formik, Ngrok, and Nodemon. 
         Outside the world of programming I've worked with  
         Photoshop, Illustrator, InDesign, and XD from Adobe Creative Cloud,
-        Jira project management software, and Microsoft Office. 
+        Jira software for Scrum Agile project management methodologies, and Microsoft Office. 
         I also have experience in 3D and CAD design with Trimble SketchUp, 
         McNeel Rhinoceros, and Autodesk Products. 
       </footer>    
