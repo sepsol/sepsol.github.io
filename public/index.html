@@ -3,6 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0,  minimum-scale=1.0"
@@ -53,7 +58,7 @@
               'page',
               'hide',
               'off',
-              'on'
+              'on',
             ]),
             (t.factory = function (e) {
               return function () {
@@ -89,15 +94,44 @@
         width: 95vw;
         height: 95vh;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         margin: auto;
         padding: 0;
         font-size: larger;
-        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        color: #432f4f;
       "
-      >You need to enable JavaScript to run this app.</noscript
     >
+      <div style="position: relative">
+        <image
+          src="./javascript-disabled/javascript.svg"
+          alt="JavaScript logo"
+        />
+        <!--<image
+          src="./javascript-disabled/js-leaf-bottom.svg"
+          alt="JavaScript logo background leaf"
+        />
+        <image
+          src="./javascript-disabled/js-leaf-top.svg"
+          alt="JavaScript logo background leaf"
+        />
+        <image
+          src="./javascript-disabled/js-cogwheel.svg"
+          alt="JavaScript cogwheel"
+        />
+        <image
+          src="./javascript-disabled/js-cogwheel.svg"
+          alt="JavaScript cogwheel"
+        />-->
+      </div>
+      <div>
+        Please <strong style="font-weight: 800">enable JavaScript</strong
+        ><br />to see this website.
+      </div>
+    </noscript>
     <div id="root"></div>
     <!--
       This HTML file is a template.
