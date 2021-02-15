@@ -27,16 +27,22 @@ header * {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
 }
-h1 {
-  font-family: 'Poppins', sans-serif;
-  line-height: calc(1.28em + 1.76vw);
-  .line-1 {
-    font-weight: 800;
-    font-size: calc(1.2em + 1.76vw);
+.intro-text {
+  h1 {
+    font-family: 'Poppins', sans-serif;
+    line-height: calc(1.28em + 1.76vw);
+    .line-1 {
+      font-weight: 800;
+      font-size: calc(1.2em + 1.76vw);
+    }
+    .line-2 {
+      font-weight: 200;
+      font-size: calc(0.8em + 1.2vw);
+    }
   }
-  .line-2 {
-    font-weight: 200;
-    font-size: calc(0.8em + 1.2vw);
+  p {
+    font-weight: 300;
+    font-size: calc(0.7em + 0.7vw);
   }
 }
 h2,

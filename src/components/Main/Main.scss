@@ -1,11 +1,6 @@
 main {
   padding: 0;
   margin: 0;
-
-  // section {
-  //   padding: 30px 0;
-  // }
-
   section#home {
     padding: 0;
     margin: 0;
@@ -16,10 +11,11 @@ main {
       top: 0;
       left: 0;
     }
-    h1 {
+    .intro-text {
       position: absolute;
       top: 25vh;
       left: 15vw;
+      width: 50vw;
     }
   }
 }
@@ -32,8 +28,14 @@ main {
       .background-intersect {
         display: none;
       }
-      h1 {
-        left: 10vw;
+      .intro-text {
+        left: 0;
+        width: 100%;
+        text-align: center;
+        p {
+          margin: 0 auto;
+          width: 70vw;
+        }
       }
     }
   }
@@ -42,8 +44,10 @@ main {
 @media screen and (max-width: 700px) {
   main {
     section#home {
-      h1 {
-        left: 5vw;
+      .intro-text {
+        p {
+          width: 80vw;
+        }
       }
     }
   }
@@ -52,8 +56,10 @@ main {
 @media screen and (max-width: 500px) {
   main {
     section#home {
-      h1 {
-        left: 0vw;
+      .intro-text {
+        p {
+          width: 90vw;
+        }
       }
     }
   }

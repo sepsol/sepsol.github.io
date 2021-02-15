@@ -21,10 +21,16 @@ function Main() {
     <main>
       <section id="home">
         <BackgroundIntersect className="background-intersect" />
-        <h1>
-          <div className="line-1">I design &amp; code</div>
-          <div className="line-2">for web &amp; mobile</div>
-        </h1>
+        <div className="intro-text">
+          <h1>
+            <div className="line-1">I design &amp; code</div>
+            <div className="line-2">for web &amp; mobile</div>
+          </h1>
+          <p>
+            Hi, I’m Sepehr and I help businesses create applications and websites to increase brand
+            awareness and sales. If that seems interesting to you, shoot me an email!
+          </p>
+        </div>
       </section>
 
       <ConditionalWrapper

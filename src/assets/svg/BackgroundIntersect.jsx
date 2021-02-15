@@ -1,7 +1,6 @@
 import * as React from 'react';
 
 function BackgroundIntersect({ size = '100%', color = '#88ACD0', ...props }) {
-  //const ref = React.useRef(null);
   return (
     <svg
       width={size}
