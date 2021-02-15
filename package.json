@@ -16,7 +16,8 @@
     "react-responsive-picture": "^3.2.2",
     "react-reveal": "^1.2.2",
     "react-scripts": "3.4.1",
-    "react-spring": "^8.0.27"
+    "react-spring": "^8.0.27",
+    "styled-components": "^5.2.1"
   },
   "scripts": {
     "start": "react-scripts start",
