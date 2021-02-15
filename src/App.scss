@@ -2,46 +2,45 @@
   --color-primary: #4e33b1;
 }
 
-@font-face {
-  font-family: 'Coolvetica';
-  font-style: normal;
-  font-weight: 400;
-  src: url('./assets/fonts/coolvetica-rg.ttf');
-}
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: url('./assets/fonts/Roboto-Light.ttf');
-}
+/*
+100 -> Thin
+200 -> Extra-light
+300 -> Light
+400 -> Regular
+500 -> Medium
+600 -> Semi-bold
+700 -> Bold
+800 -> Extra-bold
+900 -> Black
+*/
 
 *::selection {
   background-color: var(--color-primary);
   color: #fff;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: calc(0.9em + 0.1vw);
 }
 header * {
   font-size: calc(1.08em - 0.05vw);
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
 }
 h1 {
   font-size: calc(2.7em + 2vw);
-  font-family: 'Coolvetica', sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.1em;
 }
 h2,
 .hashtag {
   font-size: calc(1.8em + 0.7vw);
-  font-family: 'Coolvetica', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: var(--color-primary);
 }
 h3 {
   font-size: calc(1em + 0.3vw);
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   color: #bbb;
 }

@@ -14,11 +14,6 @@ function Header() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
     setToggled(false);
   }
-  function goToAbout() {
-    const about = document.getElementById('about');
-    about.scrollIntoView({ block: 'start', behavior: 'smooth' });
-    setToggled(false);
-  }
   function goToSkills() {
     const skills = document.getElementById('skills');
     skills.scrollIntoView({ block: 'start', behavior: 'smooth' });
@@ -45,9 +40,6 @@ function Header() {
           </li>
           <li>
             <button onClick={goToSkills}>Skills</button>
-          </li>
-          <li>
-            <button onClick={goToAbout}>About</button>
           </li>
           <li>
             <a
