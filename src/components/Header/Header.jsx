@@ -36,10 +36,10 @@ function Header() {
         </div>
         <ul className={toggled ? 'nav-links nav-links-active' : 'nav-links'}>
           <li>
-            <button onClick={goToWork}>Works</button>
+            <button onClick={goToWork}>WORKS</button>
           </li>
           <li>
-            <button onClick={goToSkills}>Skills</button>
+            <button onClick={goToSkills}>SKILLS</button>
           </li>
           <li>
             <a
@@ -48,7 +48,7 @@ function Header() {
               rel="noopener noreferrer"
               className="resume-link"
             >
-              Resume
+              RESUME
             </a>
           </li>
         </ul>

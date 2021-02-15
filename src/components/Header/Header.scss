@@ -39,6 +39,8 @@ header.nav-wrapper {
   z-index: 1;
   position: fixed;
   box-sizing: border-box;
+  //box-shadow: rgba(0, 0, 0, 0.8) 0px -10px 30px 0px;
+
   .nav {
     display: flex;
     justify-content: space-between;
@@ -75,8 +77,8 @@ header.nav-wrapper {
         transition: 0.15s;
         &:hover {
           opacity: 0.5;
-          //  background-color: #fff;
-          //  color: var(--color-primary);
+          //background-color: #fff;
+          //color: var(--color-primary);
         }
       }
     }
@@ -88,8 +90,8 @@ header.nav-wrapper {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #111;
-    opacity: 0.6;
+    background-color: #000;
+    opacity: 0.8;
     visibility: visible;
     /* filter: blur(20px); */
     transition: 0.2s;
@@ -136,12 +138,23 @@ header.nav-wrapper {
         z-index: 1;
         transform: translateY(-111%);
         transition: 0.2s;
-        * {
-          padding: 0.5em 0;
+        & > * {
+          padding: 1.5em 0 1em;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+          width: 70vw;
+          text-align: center;
+          &:first-child {
+            padding-top: 2em;
+          }
+          &:last-child {
+            border-bottom: none;
+            padding-bottom: 0.5em;
+          }
         }
       }
       .nav-links-active {
         transform: translateY(0) !important;
+        box-shadow: rgba(0, 0, 0, 1) 0px 0px 100px 0px;
       }
     }
   }
