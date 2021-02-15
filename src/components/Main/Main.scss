@@ -11,11 +11,15 @@ main {
       top: 0;
       left: 0;
     }
-    .intro-text {
-      position: absolute;
-      top: 25vh;
-      left: 15vw;
-      width: 50vw;
+    .foreground {
+      .intro-text {
+        position: absolute;
+        top: 25vh;
+        left: 15vw;
+        p {
+          width: 40%;
+        }
+      }
     }
   }
 }
@@ -28,13 +32,15 @@ main {
       .background-intersect {
         display: none;
       }
-      .intro-text {
-        left: 0;
-        width: 100%;
-        text-align: center;
-        p {
-          margin: 0 auto;
-          width: 70vw;
+      .foreground {
+        .intro-text {
+          left: 0;
+          width: 100%;
+          text-align: center;
+          p {
+            margin: 0 auto;
+            width: 70vw;
+          }
         }
       }
     }
@@ -44,9 +50,11 @@ main {
 @media screen and (max-width: 700px) {
   main {
     section#home {
-      .intro-text {
-        p {
-          width: 80vw;
+      .foreground {
+        .intro-text {
+          p {
+            width: 80vw;
+          }
         }
       }
     }
@@ -56,9 +64,11 @@ main {
 @media screen and (max-width: 500px) {
   main {
     section#home {
-      .intro-text {
-        p {
-          width: 90vw;
+      .foreground {
+        .intro-text {
+          p {
+            width: 90vw;
+          }
         }
       }
     }
