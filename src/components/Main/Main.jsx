@@ -21,6 +21,10 @@ function Main() {
     <main>
       <section id="home">
         <BackgroundIntersect className="background-intersect" />
+        <h1>
+          <div className="line-1">I design &amp; code</div>
+          <div className="line-2">for web &amp; mobile</div>
+        </h1>
       </section>
 
       <ConditionalWrapper

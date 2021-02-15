@@ -7,6 +7,8 @@ main {
   // }
 
   section#home {
+    padding: 0;
+    margin: 0;
     height: 100vh;
     width: 100%;
     .background-intersect {
@@ -14,43 +16,45 @@ main {
       top: 0;
       left: 0;
     }
+    h1 {
+      position: absolute;
+      top: 25vh;
+      left: 15vw;
+    }
   }
 }
 
 // MEDIA QUERIES:
 
-@media screen and (min-width: 400px) {
-  section#home {
-    //padding: 20vh 10vw 25vh !important;
+@media screen and (max-width: 900px) {
+  main {
+    section#home {
+      .background-intersect {
+        display: none;
+      }
+      h1 {
+        left: 10vw;
+      }
+    }
   }
 }
 
-@media screen and (min-width: 500px) {
-  section#home {
-    //padding: 17vh 15vw 22vh !important;
+@media screen and (max-width: 700px) {
+  main {
+    section#home {
+      h1 {
+        left: 5vw;
+      }
+    }
   }
 }
 
-@media screen and (min-width: 750px) {
-  section#home {
-    //padding: 17vh 20vw 20vh !important;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  section#home {
-    //padding: 15vh 25vw 17vh !important;
-  }
-}
-
-@media screen and (min-width: 1800px) {
-  section#home {
-    //padding: 15vh 28vw 15vh !important;
-  }
-}
-
-@media screen and (min-width: 2500px) {
-  section#home {
-    //padding: 20vh 35vw !important;
+@media screen and (max-width: 500px) {
+  main {
+    section#home {
+      h1 {
+        left: 0vw;
+      }
+    }
   }
 }
