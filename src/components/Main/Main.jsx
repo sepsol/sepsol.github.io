@@ -7,9 +7,10 @@ import SectionTitle from './SectionTitle';
 import Fade from 'react-reveal/Fade';
 import Bounce from 'react-reveal/Bounce';
 
-import Skills from './Skills'
+import Skills from './Skills';
 import Works from './Works';
-// import WIP from './WIP';
+
+import BackgroundIntersect from '../../assets/svg/BackgroundIntersect';
 
 import './Main.scss';
 
@@ -19,10 +20,8 @@ function Main() {
   return (
     <main>
       <section id="home">
-        
+        <BackgroundIntersect className="background-intersect" />
       </section>
-
-      
 
       <ConditionalWrapper
         condition={largeScreen}

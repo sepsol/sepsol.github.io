@@ -1,6 +1,7 @@
 main {
   padding: 0;
   margin: 0;
+
   // section {
   //   padding: 30px 0;
   // }
@@ -8,31 +9,10 @@ main {
   section#home {
     height: 100vh;
     width: 100%;
-    // padding: 15vh 5vw 30vh !important;
-    /* max-width: 1440px; */
-    margin: 0 auto;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    //background-color: var(--color-primary);
-    transition: 0.2s;
-    h1 {
-      color: #ddd;
-    }
-    h5 {
-      font-weight: bold;
-      color: #ccc;
-    }
-    a {
-      text-decoration: none;
-      /* color: var(--color-primary); */
-      color: #ccc;
-      transition: 0.1s;
-      &:hover {
-        /* border-bottom: 3px solid var(--color-primary); */
-        border-bottom: 3px solid #bbb;
-      }
+    .background-intersect {
+      position: absolute;
+      top: 0;
+      left: 0;
     }
   }
 }
@@ -41,36 +21,36 @@ main {
 
 @media screen and (min-width: 400px) {
   section#home {
-    padding: 20vh 10vw 25vh !important;
+    //padding: 20vh 10vw 25vh !important;
   }
 }
 
 @media screen and (min-width: 500px) {
   section#home {
-    padding: 17vh 15vw 22vh !important;
+    //padding: 17vh 15vw 22vh !important;
   }
 }
 
 @media screen and (min-width: 750px) {
   section#home {
-    padding: 17vh 20vw 20vh !important;
+    //padding: 17vh 20vw 20vh !important;
   }
 }
 
 @media screen and (min-width: 1000px) {
   section#home {
-    padding: 15vh 25vw 17vh !important;
+    //padding: 15vh 25vw 17vh !important;
   }
 }
 
 @media screen and (min-width: 1800px) {
   section#home {
-    padding: 15vh 28vw 15vh !important;
+    //padding: 15vh 28vw 15vh !important;
   }
 }
 
 @media screen and (min-width: 2500px) {
   section#home {
-    padding: 20vh 35vw !important;
+    //padding: 20vh 35vw !important;
   }
 }
