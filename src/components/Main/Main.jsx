@@ -24,7 +24,7 @@ function Main() {
         <BackgroundIntersect className="background-intersect" />
         <div className="foreground">
           <div className="man-sorting-layout">
-            <ManSortingLayout />
+            <ManSortingLayout size={'100%'} />
           </div>
           <div className="intro-text">
             <h1>
