@@ -11,6 +11,7 @@ import Skills from './Skills';
 import Works from './Works';
 
 import BackgroundIntersect from '../../assets/svg/BackgroundIntersect';
+import ManSortingLayout from '../../assets/svg/man-sorting-layout/0-final-result';
 
 import './Main.scss';
 
@@ -22,7 +23,9 @@ function Main() {
       <section id="home">
         <BackgroundIntersect className="background-intersect" />
         <div className="foreground">
-          
+          <div className="man-sorting-layout">
+            <ManSortingLayout />
+          </div>
           <div className="intro-text">
             <h1>
               <div className="line-1">I design &amp; code</div>
